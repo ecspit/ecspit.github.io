@@ -1,11 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>My Website</title>
+    <meta charset="UTF-8">
+    <title>David Puerta</title>
+    <style>
+        h1 {text-align: center;}
+    
+        .tabs {display: flex;border-bottom: 2px solid #ccc; justify-content: center;margin-top: 20px;} 
+
+        .tab {padding: 10px 20px;border: none;background: #f2f2f2;cursor: pointer;border-right: 1px solid #ccc;}
+
+        .tab.active {background: #ddd;font-weight: bold;}
+
+        .tab-content {padding: 20px;border: 1px solid #ccc;border-top: none}
+
+        .tab-pane {display: none;}
+        
+        .tab-pane.active {display: block;}
+
+        .tab-container {display: flex; flex-direction: column;}
+        
+        .tab-buttons {display: flex; flex-direction: row; border-bottom: 1px solid #ccc;}
+        
+        .tab-buttons button {padding: 10px;cursor: pointer;border: none;text-align: center;background: #eee;border-bottom: 1px solid #ccc;width: 200px}
+        
+        .tab-buttons button.active {background: #ddd;}
+        
+        .tab-content {flex-grow: 1;padding: 20px;border-left: 1px solid #ccc;}
+        
+        .tab-content > div {display: none;}
+
+        .tab-content > div.active {display: block;}
+    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>Hello, world!</h1>
-  <p>This is my first website hosted on GitHub Pages.</p>
+    <h1 style="font-size: 40px;"> David Puerta </h1>
+
+    <div class="tab-container">
+        <div class="tab-buttons">
+            <button onclick="showTab(0)" class="active">Home</button>
+            <button onclick="showTab(1)">Tutoring</button>
+            <button onclick="showTab(2)">Lecture Notes</button>
+            <button onclick="showTab(3)">Outreach</button>
+            <button onclick="showTab(4)">Projects</button>
+        </div>
+        <div class="tab-content">
+            <div class="active">
+                <h2>
+                    About me
+                </h2>
+                <p>
+                    I am a 2nd year mathematics student at Josephine Butler College, Durham. 
+                </p>
+                <p>
+                    On this website you will find lots of maths outreach, resources and personal projects,  ranging from GCSE revision to personal university lecture notes.
+                </p>
+                <p>
+                    For any enquieries or questions, contact me at <a href="mailto:davidantoniopuerta@gmail.com">my email</a>.
+                </p>
+                <p>
+                        CENTRE THE TABS BAR!
+                </p>
+            </div>
+            <div>Content for Tab 2</div>
+            <div>Content for Tab 3</div>
+            <div>Content for Tab 4</div>
+            <div>Content for Tab 5</div>
+        </div>
+    </div>
+
+    <script>
+    
+    function showTab(index) {
+        const tabs = document.querySelectorAll('.tab-content > div');
+        const buttons = document.querySelectorAll('.tab-buttons button');
+        tabs.forEach((tab, i) => {
+        tab.classList.toggle('active', i === index);
+        buttons[i].classList.toggle('active', i === index);
+        });
+    }
+    </script>
+   
 </body>
 </html>
