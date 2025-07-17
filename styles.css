@@ -17,7 +17,7 @@ body {
   min-height: 100vh;
 }
 .sidebar {
-  width: 240px;
+  width: 180px;
   background: #fff;
   padding: 2rem 1rem;
   border-right: 1px solid #ddd;
@@ -26,7 +26,9 @@ body {
   height: 100vh;
 }
 .sidebar h1 {
-  font-size: 1.25rem;
+  font-weight: normal;
+  font-size: 1.25em;
+  font-family: "Marcellus SC", sans-serif;
   margin-bottom: 2rem;
 }
 .sidebar a {
@@ -64,7 +66,7 @@ body {
   font-family: "Marcellus SC", sans-serif;
   margin-bottom: 0.5em;
   margin-top: 0.8em;
-  color: #01018a;
+  color: #2f6ec1;
 }
 .content h3 {
   font-weight: normal;
@@ -72,7 +74,7 @@ body {
   font-family: "Marcellus SC", sans-serif;
   margin-bottom: 0.5em;
   margin-top: 0.8em;
-  color: #01018a;
+  color: #2f6ec1;
 }
 .content p {
   margin-bottom: 1rem;
