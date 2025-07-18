@@ -25,11 +25,12 @@ body {
   top: 0;
   height: 100vh;
 }
-.sidebar h1 {
-  font-weight: normal;
-  font-size: 1.25em;
+.sidebar h1 a {
+  font-weight: 700;
+  font-size: 0.7em;
   font-family: "Marcellus SC", sans-serif;
   margin-bottom: 2rem;
+  color: #1449aa;
 }
 .sidebar a {
   text-decoration: none;
@@ -54,27 +55,28 @@ body {
 }
 
 .content h1 {
-  font-weight: normal;
-  font-size: 2.2em;
+  font-weight: 590;
+  font-size: 36px;
   font-family: "Marcellus SC", sans-serif;
   margin-bottom: 0.1em;
+  color: #1449aa;
 }
 
 .content h2 {
-  font-weight: normal;
+  font-weight: lighter;
   font-size: 1.5em;
   font-family: "Marcellus SC", sans-serif;
   margin-bottom: 0.5em;
   margin-top: 0.8em;
-  color: #2f6ec1;
+  color: #1449aa;
 }
 .content h3 {
-  font-weight: normal;
+  font-weight: 10;
   font-size: 1.2em;
   font-family: "Marcellus SC", sans-serif;
   margin-bottom: 0.5em;
   margin-top: 0.8em;
-  color: #2f6ec1;
+  color: #1449aa;
 }
 .content p {
   margin-bottom: 1rem;
@@ -120,4 +122,10 @@ footer {
 
 .anim{
   float: right;
+}
+
+.picture{
+  float: right;
+  max-width: 30%;
+  max-height: 30%;
 }
