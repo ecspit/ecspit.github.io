@@ -124,6 +124,15 @@ footer {
   float: right;
 }
 
+.content h4{
+  font-weight: 10;
+  font-size: 1em;
+  font-family: "Marcellus SC", sans-serif;
+  margin-bottom: 0.5em;
+  margin-top: 0.1em;
+  color: #1449aa;
+}
+
 .picture{
   float: right;
   max-width: 30%;
