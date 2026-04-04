@@ -1,4 +1,3 @@
-// Fade-in on scroll
 const elements = document.querySelectorAll('.fade');
 
 const observer = new IntersectionObserver(entries => {
@@ -19,4 +18,25 @@ window.addEventListener("scroll", () => {
     } else {
         header.classList.remove("transparent");
     }
+});
+
+const emailEl = document.getElementById("copyEmail");
+
+emailEl.addEventListener("click", async () => {
+  const original = emailEl.innerText;
+
+  try {
+    await navigator.clipboard.writeText(original);
+
+    emailEl.innerText = "Copied!";
+    emailEl.classList.add("copied");
+
+    setTimeout(() => {
+      emailEl.innerText = original;
+      emailEl.classList.remove("copied");
+    }, 2000);
+
+  } catch (err) {
+    console.error("Copy failed:", err);
+  }
 });
