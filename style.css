@@ -39,13 +39,16 @@ header {
     gap: 25px;
 }
 
-/* Center the logo absolutely */
 .logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
+  height: 55px;
+  width: auto;
+}
+
+/* NEW: center the anchor instead */
+header a:has(.logo) {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* Links */
@@ -233,8 +236,8 @@ header.transparent .logo {
   opacity: 0.6;
 }
 
-.copy-email:active {
-  opacity: 0.4;
+.copy-email:active { 
+    opacity: 0.4; 
 }
 
 .copy-email.copied {
