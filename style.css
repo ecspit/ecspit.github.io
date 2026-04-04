@@ -222,6 +222,25 @@ header.transparent .logo {
     opacity: 0.6;
 }
 
+.copy-email {
+  cursor: pointer;
+  color: inherit;
+  transition: opacity 0.2s ease;
+}
+
+.copy-email:hover {
+  opacity: 0.6;
+}
+
+.copy-email.copied {
+  opacity: 0.8;
+  color: green;
+}
+
+a:visited {
+  color: inherit;
+}
+
 
 
 
