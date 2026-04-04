@@ -223,13 +223,18 @@ header.transparent .logo {
 }
 
 .copy-email {
-  cursor: pointer;
-  color: inherit;
-  transition: opacity 0.2s ease;
+    color: hsl(0, 0%, 40%);
+    text-decoration: underline;
+    cursor: pointer;
+    transition: opacity 0.2s ease, color 0.2s ease;
 }
 
 .copy-email:hover {
   opacity: 0.6;
+}
+
+.copy-email:active {
+  opacity: 0.4;
 }
 
 .copy-email.copied {
