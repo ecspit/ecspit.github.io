@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Tutoring - David Puerta</title>
+<title>David Puerta</title>
 
 <link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="tutoring.css" />
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
@@ -13,61 +14,375 @@
 </head>
 <body>
 
-<header>
-    <nav class="nav-left">
-        <a href="/tutoring/index.html" class="active">Tutoring</a>
-        <a href="../resources/index.html">Resources</a>
-    </nav>
-    <a href="../index.html">
-    <img src="../assets/logo.png" alt="David Puerta logo" class="logo">
-    </a>
-    <nav class="nav-right">
-        <a href="../projects/index.html">Projects</a>
-        <a href="../index.html">About</a>
-    </nav>
+<header id="site-header">
+  <nav class="nav-left">
+    <a href="../tutoring/index.html" class="active">Tutoring</a>
+    <a href="../resources/index.html">Resources</a>
+    <a href="../index.html">About</a>
+    <a href="../projects/index.html">Projects</a>
+    <a href="../outreach/index.html">Outreach</a>
+  </nav>
 </header>
 
+<main class="main-content">
+  <div class="tut-header fade">
+    <p class="tut-eyebrow">David Puerta</p>
+    <h1 class="tut-title">Tutoring</h1>
+    <p class="tut-description">
+      Since 2023, helping young people develop confidence, character, and mathematical ability has been a driving passion of mine. Here is a collection of resources and information relating to tutoring. 
+    </p>
+  </div>
 
+  <!-- ── MAIN TAB NAV ── -->
+  <div class="tut-tabs fade">
+    <button class="tut-tab active" onclick="switchTab('tutoring')">Tutoring</button>
+    <button class="tut-tab" onclick="switchTab('revision')">Revision Resources</button>
+    <!-- <button class="tut-tab" onclick="switchTab('worksheets')">Worksheets</button> -->
+  </div>
 
-<main class="main-content fade">
-    <section class="content fade" style="margin-bottom: 350px; margin-top: 165px;">
-    <div class="text">
-        <h5>TUTORING</h5>
+  <!-- ════════════════════════════════════
+       TUTORING PANEL
+  ════════════════════════════════════ -->
+  <div id="panel-tutoring" class="tut-panel active">
+    <section class="about-layout fade">
+      <div class="text">
         <p>
-            Since begining to tutor GCSE Maths students in October 2023, teaching and working with young people to improve not just in mathematics but also as people has been a driving passion of mine. Here is a collection of resources and information relating to tutoring.
+          If you are interested in A-Level Maths tutoring I have a profile on <a href="https://www.pmt.education/tutor/tutor-profile/david-p-713377" style="color: hsl(0, 0%, 40%);">PMT Education</a> . 
         </p>
-    </div>
+        <p>
+          If you have any questions: <span class="copy-email" id="copyEmail">davidpuertamaths@gmail.com</span>
+        </p>
+      </div>
+      <div class="tut-image-wrap">
+        <a href="https://www.pmt.education/tutor/tutor-profile/david-p-713377" target="_blank">
+          <img src="../assets/PMT.png" class="tut-img" alt="Tutoring">
+        </a>
+      </div>
     </section>
-    <section class="content">
-    <img src="../assets/T3.png" class="picture" style="margin-bottom: 165px;">
-    <div class="text">
-          <h1>Tutoring Style</h1>
-            <p>
-              Specializing in 1 to 1 lessons, I provide a safe and enriching space where students are able to discuss, learn and explore.
-            </p>
-            <p>
-              Sessions are guided by the student's needs and questions, if the student has no outstanding queries then I work with the student through targeted past paper practice, general topic revision or even working through worksheets that I personally create and tailor to the student.
-            </p>
-    </div>
+  </div><!-- /panel-tutoring -->
+
+
+  <!-- ════════════════════════════════════
+       REVISION RESOURCES PANEL
+  ════════════════════════════════════ -->
+  <div id="panel-revision" class="tut-panel">
+    <section class="about-layout fade">
+      <img src="../assets/RR.png" class="picture" alt="Revision resources">
+      <div class="text">
+        <p>
+          Here you will find a collection of A-Level resources that I personally used and think highly of.
+        </p>
+        <p>
+          To excell in A-Level Maths, you have to spend a lot of time doing A-Level Maths. Not a ridiculous amount of time, but a solid, focused amount of time.
+        </p>
+        <p>
+          For most candidates, I would suggest focusing on tackling questions and then using resources accordingly. If you feel completely stuck, start with the very basics and make sure to spend enough time on each step; this is your foundation for the whole course.
+        </p>
+      </div>
     </section>
-    <section class="content">
-    <video width="650" autoplay loop muted playsinline class="anim">
-      <source src="../assets/PMT4.mp4" type="video/mp4">
-    </video>
-    <div class="text">
-          <h1>Where do I tutor?</h1>
-          <p>
-            If you are interested in A-Level Maths tutoring I have a profile on <a href="https://www.pmt.education/tutor/tutor-profile/david-p-713377" style="color: hsl(0, 0%, 40%);">PMT Education</a> . 
-          </p>
-          <p>
-            If you are interested in something other than just A-Level Maths, feel free to send me an email at <span class="copy-email" id="copyEmail">davidpuertamaths@gmail.com</span>.
-          </p>
+
+    <div class="tut-resource-list fade">
+      <h2 class="tut-subheading">Worthwhile Resources</h2>
+      <ul class="tut-bullets">
+        <li><a href="https://www.old.mathsgenie.co.uk/" style="color: hsl(0, 0%, 40%);">Maths Geine</a> - This is what I used personally to learn all of pure A-Level maths.</li>
+        <li><a href="https://vg354.user.srcf.net/admissions.html" style="color: hsl(0, 0%, 40%);">Vishal Gupta's Resources</a> - Good for university addmissions.</li>
+        <li><a href="https://www.mathsdb.com/" style="color: hsl(0, 0%, 40%);">MathsDB</a> - Although I have not personally used it, it comes highly recommended.</li>
+        <li><a href="https://www.youtube.com/@TLMaths" style="color: hsl(0, 0%, 40%);">TLMaths</a> - Classic.</li>
+      </ul>
     </div>
-    </section>
+  </div><!-- /panel-revision -->
+
+
+  <!-- <div id="panel-worksheets" class="tut-panel">
+    <div class="text fade">
+      <p>
+        These are the worksheets I made and use when tutoring. These are designed to work with all exam boards, and any differences or exam board specifics will be clearly stated. 
+      </p>
+    </div>
+
+    <div class="tut-subtabs fade">
+      <button class="tut-subtab active" onclick="switchSubtab('pure')">Pure</button>
+      <button class="tut-subtab" onclick="switchSubtab('mechanics')">Mechanics</button>
+      <button class="tut-subtab" onclick="switchSubtab('statistics')">Statistics</button>
+    </div>
+
+    <div id="subpanel-pure" class="tut-subpanel active">
+
+      <div class="tut-year fade">
+        <div class="tut-year-header">
+          <span class="tut-year-label">Algebra</span>
+          <span class="tut-year-rule"></span>
+        </div>
+        <div class="tut-grid">
+
+          <a href="#" class="tut-card unavailable" title="TBC">
+            <div class="tut-cover-wrap">
+              <img src="../assets/placeholder.png" alt="" class="tut-cover-img" />
+              <div class="tut-cover-overlay">
+                <svg class="tut-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span class="tut-ov-text">Coming soon</span>
+              </div>
+            </div>
+            <p class="tut-card-title">TBC</p>
+            <p class="tut-card-sub">A-Level</p>
+          </a>
+
+          <a href="#" class="tut-card unavailable" title="TBC">
+            <div class="tut-cover-wrap">
+              <img src="../assets/placeholder.png" alt="" class="tut-cover-img" />
+              <div class="tut-cover-overlay">
+                <svg class="tut-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span class="tut-ov-text">Coming soon</span>
+              </div>
+            </div>
+            <p class="tut-card-title">TBC</p>
+            <p class="tut-card-sub">A-Level</p>
+          </a>
+
+          <a href="#" class="tut-card unavailable" title="TBC">
+            <div class="tut-cover-wrap">
+              <img src="../assets/placeholder.png" alt="" class="tut-cover-img" />
+              <div class="tut-cover-overlay">
+                <svg class="tut-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span class="tut-ov-text">Coming soon</span>
+              </div>
+            </div>
+            <p class="tut-card-title">TBC</p>
+            <p class="tut-card-sub">A-Level</p>
+          </a>
+
+          <a href="#" class="tut-card unavailable" title="TBC">
+            <div class="tut-cover-wrap">
+              <img src="../assets/placeholder.png" alt="" class="tut-cover-img" />
+              <div class="tut-cover-overlay">
+                <svg class="tut-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span class="tut-ov-text">Coming soon</span>
+              </div>
+            </div>
+            <p class="tut-card-title">TBC</p>
+            <p class="tut-card-sub">A-Level</p>
+          </a>
+
+          <a href="#" class="tut-card unavailable" title="TBC">
+            <div class="tut-cover-wrap">
+              <img src="../assets/placeholder.png" alt="" class="tut-cover-img" />
+              <div class="tut-cover-overlay">
+                <svg class="tut-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span class="tut-ov-text">Coming soon</span>
+              </div>
+            </div>
+            <p class="tut-card-title">TBC</p>
+            <p class="tut-card-sub">A-Level</p>
+          </a>
+
+          <a href="#" class="tut-card unavailable" title="TBC">
+            <div class="tut-cover-wrap">
+              <img src="../assets/placeholder.png" alt="" class="tut-cover-img" />
+              <div class="tut-cover-overlay">
+                <svg class="tut-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span class="tut-ov-text">Coming soon</span>
+              </div>
+            </div>
+            <p class="tut-card-title">TBC</p>
+            <p class="tut-card-sub">A-Level</p>
+          </a>
+
+          <a href="#" class="tut-card unavailable" title="TBC">
+            <div class="tut-cover-wrap">
+              <img src="../assets/placeholder.png" alt="" class="tut-cover-img" />
+              <div class="tut-cover-overlay">
+                <svg class="tut-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span class="tut-ov-text">Coming soon</span>
+              </div>
+            </div>
+            <p class="tut-card-title">TBC</p>
+            <p class="tut-card-sub">A-Level</p>
+          </a>
+
+          <a href="#" class="tut-card unavailable" title="TBC">
+            <div class="tut-cover-wrap">
+              <img src="../assets/placeholder.png" alt="" class="tut-cover-img" />
+              <div class="tut-cover-overlay">
+                <svg class="tut-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span class="tut-ov-text">Coming soon</span>
+              </div>
+            </div>
+            <p class="tut-card-title">TBC</p>
+            <p class="tut-card-sub">A-Level</p>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="tut-year fade">
+        <div class="tut-year-header">
+          <span class="tut-year-label">Calculus</span>
+          <span class="tut-year-rule"></span>
+        </div>
+        <div class="tut-grid">
+
+          <a href="#" class="tut-card unavailable" title="TBC">
+            <div class="tut-cover-wrap">
+              <img src="../assets/placeholder.png" alt="" class="tut-cover-img" />
+              <div class="tut-cover-overlay">
+                <svg class="tut-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span class="tut-ov-text">Coming soon</span>
+              </div>
+            </div>
+            <p class="tut-card-title">TBC</p>
+            <p class="tut-card-sub">A-Level</p>
+          </a>
+
+          <a href="#" class="tut-card unavailable" title="TBC">
+            <div class="tut-cover-wrap">
+              <img src="../assets/placeholder.png" alt="" class="tut-cover-img" />
+              <div class="tut-cover-overlay">
+                <svg class="tut-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span class="tut-ov-text">Coming soon</span>
+              </div>
+            </div>
+            <p class="tut-card-title">TBC</p>
+            <p class="tut-card-sub">A-Level</p>
+          </a>
+
+          <a href="#" class="tut-card unavailable" title="TBC">
+            <div class="tut-cover-wrap">
+              <img src="../assets/placeholder.png" alt="" class="tut-cover-img" />
+              <div class="tut-cover-overlay">
+                <svg class="tut-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span class="tut-ov-text">Coming soon</span>
+              </div>
+            </div>
+            <p class="tut-card-title">TBC</p>
+            <p class="tut-card-sub">A-Level</p>
+          </a>
+
+          <a href="#" class="tut-card unavailable" title="TBC">
+            <div class="tut-cover-wrap">
+              <img src="../assets/placeholder.png" alt="" class="tut-cover-img" />
+              <div class="tut-cover-overlay">
+                <svg class="tut-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span class="tut-ov-text">Coming soon</span>
+              </div>
+            </div>
+            <p class="tut-card-title">TBC</p>
+            <p class="tut-card-sub">A-Level</p>
+          </a>
+
+          <a href="#" class="tut-card unavailable" title="TBC">
+            <div class="tut-cover-wrap">
+              <img src="../assets/placeholder.png" alt="" class="tut-cover-img" />
+              <div class="tut-cover-overlay">
+                <svg class="tut-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span class="tut-ov-text">Coming soon</span>
+              </div>
+            </div>
+            <p class="tut-card-title">TBC</p>
+            <p class="tut-card-sub">A-Level</p>
+          </a>
+
+          <a href="#" class="tut-card unavailable" title="TBC">
+            <div class="tut-cover-wrap">
+              <img src="../assets/placeholder.png" alt="" class="tut-cover-img" />
+              <div class="tut-cover-overlay">
+                <svg class="tut-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span class="tut-ov-text">Coming soon</span>
+              </div>
+            </div>
+            <p class="tut-card-title">TBC</p>
+            <p class="tut-card-sub">A-Level</p>
+          </a>
+
+          <a href="#" class="tut-card unavailable" title="TBC">
+            <div class="tut-cover-wrap">
+              <img src="../assets/placeholder.png" alt="" class="tut-cover-img" />
+              <div class="tut-cover-overlay">
+                <svg class="tut-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span class="tut-ov-text">Coming soon</span>
+              </div>
+            </div>
+            <p class="tut-card-title">TBC</p>
+            <p class="tut-card-sub">A-Level</p>
+          </a>
+
+          <a href="#" class="tut-card unavailable" title="TBC">
+            <div class="tut-cover-wrap">
+              <img src="../assets/placeholder.png" alt="" class="tut-cover-img" />
+              <div class="tut-cover-overlay">
+                <svg class="tut-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span class="tut-ov-text">Coming soon</span>
+              </div>
+            </div>
+            <p class="tut-card-title">TBC</p>
+            <p class="tut-card-sub">A-Level</p>
+          </a>
+
+          <a href="#" class="tut-card unavailable" title="TBC">
+            <div class="tut-cover-wrap">
+              <img src="../assets/placeholder.png" alt="" class="tut-cover-img" />
+              <div class="tut-cover-overlay">
+                <svg class="tut-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span class="tut-ov-text">Coming soon</span>
+              </div>
+            </div>
+            <p class="tut-card-title">TBC</p>
+            <p class="tut-card-sub">A-Level</p>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div id="subpanel-mechanics" class="tut-subpanel">
+      <div class="tut-year fade">
+        <div class="tut-year-header">
+          <span class="tut-year-label">TBC</span>
+          <span class="tut-year-rule"></span>
+        </div>
+        <div class="tut-grid">
+        </div>
+      </div>
+    </div>
+
+    <div id="subpanel-statistics" class="tut-subpanel">
+      <div class="tut-year fade">
+        <div class="tut-year-header">
+          <span class="tut-year-label">TBC</span>
+          <span class="tut-year-rule"></span>
+        </div>
+        <div class="tut-grid">
+        </div>
+      </div>
+    </div>
+
+  </div> -->
+
 </main>
 
-
 <script src="../script.js"></script>
+<script>
+function switchTab(name) {
+  document.querySelectorAll('.tut-tab').forEach(t => t.classList.toggle('active', t.getAttribute('onclick').includes(`'${name}'`)));
+  document.querySelectorAll('.tut-panel').forEach(p => p.classList.toggle('active', p.id === 'panel-' + name));
+}
+
+function switchSubtab(name) {
+  document.querySelectorAll('.tut-subtab').forEach(t => t.classList.toggle('active', t.getAttribute('onclick').includes(`'${name}'`)));
+  document.querySelectorAll('.tut-subpanel').forEach(p => p.classList.toggle('active', p.id === 'subpanel-' + name));
+}
+
+document.querySelectorAll('.tut-card:not(.unavailable)').forEach(card => {
+  const wrap = card.querySelector('.tut-cover-wrap');
+  card.addEventListener('mousemove', e => {
+    const r = wrap.getBoundingClientRect();
+    const dx = (e.clientX - r.left - r.width  / 2) / (r.width  / 2);
+    const dy = (e.clientY - r.top  - r.height / 2) / (r.height / 2);
+    wrap.style.transform = `translateY(-10px) scale(1.04) rotateX(${-dy * 6}deg) rotateY(${dx * 6}deg)`;
+  });
+  card.addEventListener('mouseleave', () => { wrap.style.transform = ''; });
+});
+</script>
 
 </body>
 </html>
