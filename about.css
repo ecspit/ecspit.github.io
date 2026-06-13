@@ -1,0 +1,270 @@
+/* ─────────────────────────────────────────
+   resources.css  –  drop in resources/
+   Requires style.css to already be loaded.
+───────────────────────────────────────── */
+
+/* ── Page header block ── */
+.abt-header {
+  margin-bottom: 3rem;
+}
+
+.abt-eyebrow {
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 0.4rem;
+}
+
+.abt-title {
+  font-family: 'Poppins', serif;
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.75rem;
+  color: #111;
+}
+
+.abt-description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+  max-width: 580px;
+}
+
+/* ── Tab bar ── */
+.abt-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 3rem;
+}
+
+.abt-tab {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #999;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 0.6rem 1.4rem 0.7rem;
+  margin-bottom: -1px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.abt-tab:hover { color: #333; }
+
+.abt-tab.active {
+  color: #111;
+  border-bottom-color: #111;
+}
+
+/* ── Panel ── */
+.abt-panel { display: none; }
+.abt-panel.active { display: block; }
+
+/* ── Year block ── */
+.abt-year {
+  margin-bottom: 3.5rem;
+}
+
+.abt-year-header {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.abt-year-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #999;
+  white-space: nowrap;
+}
+
+.abt-year-rule {
+  flex: 1;
+  height: 1px;
+  background: #e8e8e8;
+}
+
+/* ── Grid ── */
+.abt-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+/* ── Card ── */
+.abt-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  cursor: pointer;
+}
+
+.abt-card.unavailable {
+  cursor: default;
+  pointer-events: none;
+}
+
+/* ── Cover wrapper: 3/4 aspect, perspective for 3D tilt ── */
+.abt-cover-wrap {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #f0ede8;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  transform-style: preserve-3d;
+  transition: transform 0.25s cubic-bezier(0.34, 1.4, 0.64, 1),
+              box-shadow 0.25s ease;
+}
+
+.abt-card:not(.unavailable):hover .abt-cover-wrap {
+  box-shadow: 0 14px 36px rgba(0,0,0,0.15), 0 4px 10px rgba(0,0,0,0.07);
+}
+
+/* Real cover image */
+.abt-cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Placeholder (no image yet) */
+.abt-cover-placeholder {
+  width: 100%;
+  height: 100%;
+  background: var(--ph-bg, #eee);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+.abt-ph-symbol {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6rem;
+  color: #555;
+  opacity: 0.3;
+  line-height: 1;
+}
+
+.abt-ph-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #666;
+  opacity: 0.6;
+}
+
+/* Hover overlay */
+.abt-cover-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(14, 12, 28, 0.78);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  border-radius: 6px;
+}
+
+.abt-card:not(.unavailable):hover .abt-cover-overlay {
+  opacity: 1;
+}
+
+.abt-ov-icon {
+  width: 26px;
+  height: 26px;
+  color: rgba(255,255,255,0.9);
+  stroke: rgba(255,255,255,0.9);
+}
+
+.abt-ov-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.75);
+}
+
+/* Unavailable cards: dim + faded overlay always visible */
+.abt-card.unavailable .abt-cover-wrap {
+  opacity: 0.5;
+}
+
+.abt-card.unavailable .abt-cover-overlay {
+  background: rgba(0,0,0,0.3);
+  opacity: 1;
+}
+
+/* ── Card labels ── */
+.abt-card-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #111;
+  margin-top: 10px;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  transition: color 0.15s;
+}
+
+.abt-card:not(.unavailable):hover .abt-card-title {
+  color: #1449aa;
+}
+
+.abt-card-sub {
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 300;
+  color: #888;
+  margin-top: 3px;
+  line-height: 1.4;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .abt-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .abt-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .main-content {
+    padding: 8rem 1.5rem 3rem;
+  }
+
+  .abt-title {
+    font-size: 30px;
+  }
+}
