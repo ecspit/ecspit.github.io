@@ -1,0 +1,67 @@
+<svg width="100%" viewBox="0 0 680 360" role="img" xmlns="http://www.w3.org/2000/svg">
+<title style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">1st Year – Basis Transformation</title>
+<desc style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">Coloured basis transformation diagram, minimal labels</desc>
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+    <path d="M1 1L9 5L1 9" fill="#1a1a1a" stroke="none"/>
+  </marker>
+  <marker id="arrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+    <path d="M1 1L9 5L1 9" fill="#2563a8" stroke="none"/>
+  </marker>
+  <marker id="arrt" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+    <path d="M1 1L9 5L1 9" fill="#1a7a5e" stroke="none"/>
+  </marker>
+  <marker id="arrv" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+    <path d="M1 1L9 5L1 9" fill="#7a3a9a" stroke="none"/>
+  </marker>
+</defs>
+<rect width="680" height="360" fill="#f9f8f5" style="fill:rgb(249, 248, 245);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- ── LEFT BASIS ── -->
+<!-- Faint axis guides -->
+<line x1="110" y1="280" x2="245" y2="280" stroke="#ccc" stroke-width="0.7" stroke-dasharray="3,3" style="fill:rgb(0, 0, 0);stroke:rgb(204, 204, 204);color:rgb(255, 255, 255);stroke-width:0.7px;stroke-dasharray:3px, 3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<line x1="110" y1="280" x2="110" y2="130" stroke="#ccc" stroke-width="0.7" stroke-dasharray="3,3" style="fill:rgb(0, 0, 0);stroke:rgb(204, 204, 204);color:rgb(255, 255, 255);stroke-width:0.7px;stroke-dasharray:3px, 3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- e₁ (blue) -->
+<line x1="110" y1="280" x2="215" y2="280" stroke="#2563a8" stroke-width="2" marker-end="url(#arrb)" style="fill:rgb(0, 0, 0);stroke:rgb(37, 99, 168);color:rgb(255, 255, 255);stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="218" y="276" font-family="Georgia, serif" font-size="13" fill="#2563a8" font-style="italic" style="fill:rgb(37, 99, 168);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Georgia, serif;font-size:13px;font-weight:400;font-style:italic;text-anchor:start;dominant-baseline:auto">e₁</text>
+
+<!-- e₂ (teal) -->
+<line x1="110" y1="280" x2="110" y2="170" stroke="#1a7a5e" stroke-width="2" marker-end="url(#arrt)" style="fill:rgb(0, 0, 0);stroke:rgb(26, 122, 94);color:rgb(255, 255, 255);stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="90" y="162" font-family="Georgia, serif" font-size="13" fill="#1a7a5e" font-style="italic" style="fill:rgb(26, 122, 94);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Georgia, serif;font-size:13px;font-weight:400;font-style:italic;text-anchor:start;dominant-baseline:auto">e₂</text>
+
+<!-- vector v (purple) -->
+<line x1="110" y1="280" x2="200" y2="185" stroke="#7a3a9a" stroke-width="2.2" marker-end="url(#arrv)" style="fill:rgb(0, 0, 0);stroke:rgb(122, 58, 154);color:rgb(255, 255, 255);stroke-width:2.2px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="162" y="218" font-family="Georgia, serif" font-size="15" fill="#7a3a9a" font-style="italic" style="fill:rgb(122, 58, 154);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Georgia, serif;font-size:15px;font-weight:400;font-style:italic;text-anchor:start;dominant-baseline:auto">v</text>
+
+<!-- coord dashes -->
+<line x1="200" y1="185" x2="200" y2="280" stroke="#bbb" stroke-width="0.7" stroke-dasharray="3,3" style="fill:rgb(0, 0, 0);stroke:rgb(187, 187, 187);color:rgb(255, 255, 255);stroke-width:0.7px;stroke-dasharray:3px, 3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<line x1="110" y1="185" x2="200" y2="185" stroke="#bbb" stroke-width="0.7" stroke-dasharray="3,3" style="fill:rgb(0, 0, 0);stroke:rgb(187, 187, 187);color:rgb(255, 255, 255);stroke-width:0.7px;stroke-dasharray:3px, 3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- ── CENTRE ARROW ── -->
+<line x1="290" y1="210" x2="388" y2="210" stroke="#1a1a1a" stroke-width="1.2" marker-end="url(#arr)" style="fill:rgb(0, 0, 0);stroke:rgb(26, 26, 26);color:rgb(255, 255, 255);stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="334" y="200" font-family="Georgia, serif" font-size="14" fill="#1a1a1a" font-style="italic" style="fill:rgb(26, 26, 26);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Georgia, serif;font-size:14px;font-weight:400;font-style:italic;text-anchor:start;dominant-baseline:auto">P</text>
+
+<!-- ── RIGHT BASIS (rotated ~28°) ── -->
+<line x1="510" y1="280" x2="645" y2="280" stroke="#ccc" stroke-width="0.7" stroke-dasharray="3,3" style="fill:rgb(0, 0, 0);stroke:rgb(204, 204, 204);color:rgb(255, 255, 255);stroke-width:0.7px;stroke-dasharray:3px, 3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<line x1="510" y1="280" x2="510" y2="130" stroke="#ccc" stroke-width="0.7" stroke-dasharray="3,3" style="fill:rgb(0, 0, 0);stroke:rgb(204, 204, 204);color:rgb(255, 255, 255);stroke-width:0.7px;stroke-dasharray:3px, 3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- f₁ (blue, rotated) -->
+<line x1="510" y1="280" x2="605" y2="240" stroke="#2563a8" stroke-width="2" marker-end="url(#arrb)" style="fill:rgb(0, 0, 0);stroke:rgb(37, 99, 168);color:rgb(255, 255, 255);stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="610" y="238" font-family="Georgia, serif" font-size="13" fill="#2563a8" font-style="italic" style="fill:rgb(37, 99, 168);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Georgia, serif;font-size:13px;font-weight:400;font-style:italic;text-anchor:start;dominant-baseline:auto">f₁</text>
+
+<!-- f₂ (teal, perpendicular to f₁) -->
+<line x1="510" y1="280" x2="470" y2="168" stroke="#1a7a5e" stroke-width="2" marker-end="url(#arrt)" style="fill:rgb(0, 0, 0);stroke:rgb(26, 122, 94);color:rgb(255, 255, 255);stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="449" y="162" font-family="Georgia, serif" font-size="13" fill="#1a7a5e" font-style="italic" style="fill:rgb(26, 122, 94);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Georgia, serif;font-size:13px;font-weight:400;font-style:italic;text-anchor:start;dominant-baseline:auto">f₂</text>
+
+<!-- same v in new basis (purple) -->
+<line x1="510" y1="280" x2="592" y2="182" stroke="#7a3a9a" stroke-width="2.2" marker-end="url(#arrv)" style="fill:rgb(0, 0, 0);stroke:rgb(122, 58, 154);color:rgb(255, 255, 255);stroke-width:2.2px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="560" y="216" font-family="Georgia, serif" font-size="15" fill="#7a3a9a" font-style="italic" style="fill:rgb(122, 58, 154);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Georgia, serif;font-size:15px;font-weight:400;font-style:italic;text-anchor:start;dominant-baseline:auto">v</text>
+
+<!-- coord dashes -->
+<line x1="592" y1="182" x2="556" y2="148" stroke="#bbb" stroke-width="0.7" stroke-dasharray="3,3" style="fill:rgb(0, 0, 0);stroke:rgb(187, 187, 187);color:rgb(255, 255, 255);stroke-width:0.7px;stroke-dasharray:3px, 3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<line x1="592" y1="182" x2="546" y2="280" stroke="#bbb" stroke-width="0.7" stroke-dasharray="3,3" style="fill:rgb(0, 0, 0);stroke:rgb(187, 187, 187);color:rgb(255, 255, 255);stroke-width:0.7px;stroke-dasharray:3px, 3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- Title -->
+<text x="340" y="342" font-family="Georgia, serif" font-size="15" fill="#1a1a1a" text-anchor="middle" letter-spacing="1" style="fill:rgb(26, 26, 26);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Georgia, serif;font-size:15px;font-weight:400;text-anchor:middle;dominant-baseline:auto">1st Year</text>
+</svg>

@@ -1,0 +1,80 @@
+<svg width="100%" viewBox="0 0 690 490" role="img" style="" xmlns="http://www.w3.org/2000/svg"><defs><mask id="imagine-text-gaps-869yn9" maskUnits="userSpaceOnUse"><rect x="0" y="0" width="690" height="490" fill="white"/><rect x="292" y="157" width="31.984375" height="45" fill="black" rx="2"/><rect x="368" y="255" width="31.984375" height="45" fill="black" rx="2"/><rect x="60" y="96.5" width="34.0625" height="48.5" fill="black" rx="2"/><rect x="60" y="306.5" width="34.0625" height="48.5" fill="black" rx="2"/><rect x="227.3125" y="384" width="225.375" height="45" fill="black" rx="2"/><rect x="297.84375" y="433" width="89.6796875" height="42" fill="black" rx="2"/></mask></defs>
+<title style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">A-Level — Snell's Law hand-drawn style</title>
+<desc style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">Hand-drawn style Snell's Law refraction diagram with coloured rays and sketchy lines</desc>
+
+
+<rect width="680" height="480" fill="#ffffff" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- Upper medium tint -->
+<rect x="0" y="0" width="680" height="230" fill="#e8f2ff" opacity="0.45" style="fill:rgb(232, 242, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.45;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<!-- Lower medium tint -->
+<rect x="0" y="230" width="680" height="250" fill="#fff3e8" opacity="0.45" style="fill:rgb(255, 243, 232);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.45;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- Interface — slightly wobbly hand-drawn line -->
+<path d="M 20 232 C 80 228, 160 234, 240 231 C 320 228, 400 234, 480 230 C 560 226, 620 233, 660 231" fill="none" stroke="#333" stroke-width="3" stroke-linecap="round" style="fill:none;stroke:rgb(51, 51, 51);color:rgb(255, 255, 255);stroke-width:3px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- Normal — dashed vertical, slightly off true vertical -->
+<path d="M 342 48 C 341 90, 343 140, 341 180 C 340 210, 342 250, 340 300 C 339 340, 341 380, 340 430" fill="none" stroke="#888" stroke-width="1.8" stroke-dasharray="9,7" stroke-linecap="round" mask="url(#imagine-text-gaps-869yn9)" style="fill:none;stroke:rgb(136, 136, 136);color:rgb(255, 255, 255);stroke-width:1.8px;stroke-dasharray:9px, 7px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- 
+  Incidence point: (340, 231)
+  θ1 = 38° from normal → incoming from upper-left
+  sin38=0.616, cos38=0.788
+  Start: (340 - 0.616*210, 231 - 0.788*210) = (211, 65)
+
+  θ2 = 58° from normal → refracted lower-right (denser medium)
+  sin58=0.848, cos58=0.530
+  End: (340 + 0.848*200, 231 + 0.530*200) = (510, 337)
+
+  Reflected: mirror of incident → upper-right
+  End: (340 + 0.616*160, 231 - 0.788*160) = (439, 105)
+-->
+
+<!-- Incident ray — blue, slightly wobbly -->
+<path d="M 214 68 C 240 100, 275 148, 300 179 C 315 196, 328 212, 340 231" fill="none" stroke="#1a6bbf" stroke-width="3.5" stroke-linecap="round" mask="url(#imagine-text-gaps-869yn9)" style="fill:none;stroke:rgb(26, 107, 191);color:rgb(255, 255, 255);stroke-width:3.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<!-- Incident arrowhead at end -->
+<path d="M 325 215 L 340 231 L 328 219" fill="none" stroke="#1a6bbf" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="fill:none;stroke:rgb(26, 107, 191);color:rgb(255, 255, 255);stroke-width:3px;stroke-linecap:round;stroke-linejoin:round;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- Refracted ray — orange/red, wobbly -->
+<path d="M 340 231 C 355 250, 378 272, 400 291 C 425 314, 455 326, 510 340" fill="none" stroke="#c0531a" stroke-width="3.5" stroke-linecap="round" mask="url(#imagine-text-gaps-869yn9)" style="fill:none;stroke:rgb(192, 83, 26);color:rgb(255, 255, 255);stroke-width:3.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<!-- Refracted arrowhead -->
+<path d="M 492 332 L 510 340 L 494 338" fill="none" stroke="#c0531a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="fill:none;stroke:rgb(192, 83, 26);color:rgb(255, 255, 255);stroke-width:3px;stroke-linecap:round;stroke-linejoin:round;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- Reflected ray — grey dashed -->
+<path d="M 340 231 C 358 215, 378 185, 400 162 C 415 146, 430 126, 442 108" fill="none" stroke="#999" stroke-width="2" stroke-dasharray="8,5" stroke-linecap="round" style="fill:none;stroke:rgb(153, 153, 153);color:rgb(255, 255, 255);stroke-width:2px;stroke-dasharray:8px, 5px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<path d="M 430 112 L 442 108 L 434 118" fill="none" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none;stroke:rgb(153, 153, 153);color:rgb(255, 255, 255);stroke-width:2px;stroke-linecap:round;stroke-linejoin:round;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- θ1 arc — blue -->
+<path d="M 340 179 A 52 52 0 0 0 307 199" fill="none" stroke="#1a6bbf" stroke-width="2" stroke-linecap="round" mask="url(#imagine-text-gaps-869yn9)" style="fill:none;stroke:rgb(26, 107, 191);color:rgb(255, 255, 255);stroke-width:2px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<!-- θ1 label -->
+<text x="296" y="188" font-size="26" fill="#1a6bbf" style="fill:rgb(26, 107, 191);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Caveat, cursive;font-size:26px;font-weight:400;text-anchor:start;dominant-baseline:auto">θ₁</text>
+
+<!-- θ2 arc — orange -->
+<path d="M 340 283 A 52 52 0 0 0 376 259" fill="none" stroke="#c0531a" stroke-width="2" stroke-linecap="round" mask="url(#imagine-text-gaps-869yn9)" style="fill:none;stroke:rgb(192, 83, 26);color:rgb(255, 255, 255);stroke-width:2px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<!-- θ2 label -->
+<text x="372" y="286" font-size="26" fill="#c0531a" style="fill:rgb(192, 83, 26);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Caveat, cursive;font-size:26px;font-weight:400;text-anchor:start;dominant-baseline:auto">θ₂</text>
+
+<!-- n1 label -->
+<text x="64" y="130" font-size="28" fill="#1a6bbf" style="fill:rgb(26, 107, 191);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Caveat, cursive;font-size:28px;font-weight:400;text-anchor:start;dominant-baseline:auto">n₁</text>
+<!-- n2 label -->
+<text x="64" y="340" font-size="28" fill="#c0531a" style="fill:rgb(192, 83, 26);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Caveat, cursive;font-size:28px;font-weight:400;text-anchor:start;dominant-baseline:auto">n₂</text>
+
+<!-- Hatching below interface -->
+<g stroke="#bbb" stroke-width="1.2" stroke-linecap="round" style="fill:rgb(0, 0, 0);stroke:rgb(187, 187, 187);color:rgb(255, 255, 255);stroke-width:1.2px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+  <line x1="90" y1="232" x2="74" y2="248" style="fill:rgb(0, 0, 0);stroke:rgb(187, 187, 187);color:rgb(255, 255, 255);stroke-width:1.2px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="130" y1="232" x2="114" y2="248" style="fill:rgb(0, 0, 0);stroke:rgb(187, 187, 187);color:rgb(255, 255, 255);stroke-width:1.2px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="170" y1="232" x2="154" y2="248" style="fill:rgb(0, 0, 0);stroke:rgb(187, 187, 187);color:rgb(255, 255, 255);stroke-width:1.2px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="210" y1="232" x2="194" y2="248" style="fill:rgb(0, 0, 0);stroke:rgb(187, 187, 187);color:rgb(255, 255, 255);stroke-width:1.2px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="430" y1="232" x2="414" y2="248" style="fill:rgb(0, 0, 0);stroke:rgb(187, 187, 187);color:rgb(255, 255, 255);stroke-width:1.2px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="470" y1="232" x2="454" y2="248" style="fill:rgb(0, 0, 0);stroke:rgb(187, 187, 187);color:rgb(255, 255, 255);stroke-width:1.2px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="510" y1="232" x2="494" y2="248" style="fill:rgb(0, 0, 0);stroke:rgb(187, 187, 187);color:rgb(255, 255, 255);stroke-width:1.2px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="550" y1="232" x2="534" y2="248" style="fill:rgb(0, 0, 0);stroke:rgb(187, 187, 187);color:rgb(255, 255, 255);stroke-width:1.2px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="590" y1="232" x2="574" y2="248" style="fill:rgb(0, 0, 0);stroke:rgb(187, 187, 187);color:rgb(255, 255, 255);stroke-width:1.2px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+</g>
+
+<!-- Formula -->
+<text x="340" y="415" font-size="26" fill="#333" text-anchor="middle" style="fill:rgb(51, 51, 51);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Caveat, cursive;font-size:26px;font-weight:400;text-anchor:middle;dominant-baseline:auto">n₁ sin θ₁  =  n₂ sin θ₂</text>
+
+<!-- Title -->
+<text x="340" y="462" font-size="24" fill="#555" text-anchor="middle" style="fill:rgb(85, 85, 85);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Caveat, cursive;font-size:24px;font-weight:400;text-anchor:middle;dominant-baseline:auto">A-Level</text>
+</svg>

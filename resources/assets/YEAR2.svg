@@ -1,0 +1,46 @@
+<svg width="100%" viewBox="0 0 690 490" role="img" style="" xmlns="http://www.w3.org/2000/svg">
+<title style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">2nd Year — Surface and normal vector hand-drawn style</title>
+<desc style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">Hand-drawn wobbly surface patch with a normal vector n-hat sticking out, in colourful sketchy style</desc>
+
+<rect width="680" height="480" fill="#ffffff" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- Surface patch — wobbly filled shape in perspective, green fill -->
+<path d="M 160 310 C 195 270, 260 245, 320 238 C 370 232, 430 238, 480 252 C 520 263, 545 285, 530 315 C 515 342, 470 362, 410 372 C 350 382, 270 378, 220 362 C 180 350, 148 338, 160 310 Z" fill="#d4eedd" stroke="#2a8a4a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="fill:rgb(212, 238, 221);stroke:rgb(42, 138, 74);color:rgb(255, 255, 255);stroke-width:3px;stroke-linecap:round;stroke-linejoin:round;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- Surface mesh lines to give it depth -->
+<path d="M 210 268 C 270 258, 360 252, 450 262" fill="none" stroke="#7ac48e" stroke-width="1.5" stroke-linecap="round" style="fill:none;stroke:rgb(122, 196, 142);color:rgb(255, 255, 255);stroke-width:1.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<path d="M 185 295 C 255 282, 370 276, 480 286" fill="none" stroke="#7ac48e" stroke-width="1.5" stroke-linecap="round" style="fill:none;stroke:rgb(122, 196, 142);color:rgb(255, 255, 255);stroke-width:1.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<path d="M 310 240 C 318 270, 322 320, 318 368" fill="none" stroke="#7ac48e" stroke-width="1.5" stroke-linecap="round" style="fill:none;stroke:rgb(122, 196, 142);color:rgb(255, 255, 255);stroke-width:1.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<path d="M 400 248 C 406 278, 408 328, 402 372" fill="none" stroke="#7ac48e" stroke-width="1.5" stroke-linecap="round" style="fill:none;stroke:rgb(122, 196, 142);color:rgb(255, 255, 255);stroke-width:1.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- Normal vector — blue, from surface centroid upward and slightly right -->
+<!-- Base of normal at approx centre of surface: (355, 295) -->
+<!-- Normal tip: (420, 130) — long upward vector -->
+<path d="M 355 295 C 362 258, 378 210, 400 160 C 408 140, 415 134, 422 128" fill="none" stroke="#1a6bbf" stroke-width="4" stroke-linecap="round" style="fill:none;stroke:rgb(26, 107, 191);color:rgb(255, 255, 255);stroke-width:4px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<!-- Arrowhead -->
+<path d="M 406 138 L 422 128 L 414 144" fill="none" stroke="#1a6bbf" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" style="fill:none;stroke:rgb(26, 107, 191);color:rgb(255, 255, 255);stroke-width:3.5px;stroke-linecap:round;stroke-linejoin:round;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- n-hat label -->
+<text x="434" y="124" font-size="30" fill="#1a6bbf" style="fill:rgb(26, 107, 191);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Caveat, cursive;font-size:30px;font-weight:400;text-anchor:start;dominant-baseline:auto">n̂</text>
+
+<!-- Small dot at base of normal -->
+<circle cx="355" cy="295" r="5" fill="#1a6bbf" style="fill:rgb(26, 107, 191);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- Tangent vector 1 — red, along surface -->
+<!-- From same base point along the surface to the right -->
+<path d="M 355 295 C 390 288, 440 278, 490 268" fill="none" stroke="#c0531a" stroke-width="3.5" stroke-linecap="round" style="fill:none;stroke:rgb(192, 83, 26);color:rgb(255, 255, 255);stroke-width:3.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<path d="M 474 270 L 490 268 L 477 277" fill="none" stroke="#c0531a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="fill:none;stroke:rgb(192, 83, 26);color:rgb(255, 255, 255);stroke-width:3px;stroke-linecap:round;stroke-linejoin:round;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- Tangent vector 2 — red, along surface other direction -->
+<path d="M 355 295 C 330 305, 295 318, 255 328" fill="none" stroke="#c0531a" stroke-width="3.5" stroke-linecap="round" style="fill:none;stroke:rgb(192, 83, 26);color:rgb(255, 255, 255);stroke-width:3.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<path d="M 270 322 L 255 328 L 267 336" fill="none" stroke="#c0531a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="fill:none;stroke:rgb(192, 83, 26);color:rgb(255, 255, 255);stroke-width:3px;stroke-linecap:round;stroke-linejoin:round;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- t label for tangent -->
+<text x="498" y="265" font-size="28" fill="#c0531a" style="fill:rgb(192, 83, 26);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Caveat, cursive;font-size:28px;font-weight:400;text-anchor:start;dominant-baseline:auto">t</text>
+
+<!-- S label on surface -->
+<text x="355" y="350" font-size="30" fill="#2a8a4a" text-anchor="middle" style="fill:rgb(42, 138, 74);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Caveat, cursive;font-size:30px;font-weight:400;text-anchor:middle;dominant-baseline:auto">S</text>
+
+<!-- Title -->
+<text x="340" y="462" font-size="24" fill="#555" text-anchor="middle" style="fill:rgb(85, 85, 85);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Caveat, cursive;font-size:24px;font-weight:400;text-anchor:middle;dominant-baseline:auto">2nd Year</text>
+</svg>

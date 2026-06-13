@@ -1,0 +1,59 @@
+<svg width="100%" viewBox="0 0 690 490" role="img" style="" xmlns="http://www.w3.org/2000/svg">
+<title style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">3rd Year — Feynman diagram hand-drawn style</title>
+<desc style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">Hand-drawn style Feynman diagram showing two electrons exchanging a virtual photon</desc>
+
+<rect width="680" height="480" fill="#ffffff" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!--
+  Vertices:
+  V1 (260, 180)
+  V2 (420, 300)
+
+  Fermion line 1: from (80, 100) → V1 → (580, 100)
+  Fermion line 2: from (80, 380) → V2 → (580, 380)
+  Photon: V1 → V2 (wavy line)
+-->
+
+<!-- Fermion line 1 incoming — black, wobbly -->
+<path d="M 82 102 C 130 98, 190 95, 258 180" fill="none" stroke="#222" stroke-width="3.5" stroke-linecap="round" style="fill:none;stroke:rgb(34, 34, 34);color:rgb(255, 255, 255);stroke-width:3.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<!-- arrow on incoming 1 -->
+<path d="M 232 155 L 258 180 L 240 162" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="fill:none;stroke:rgb(34, 34, 34);color:rgb(255, 255, 255);stroke-width:3px;stroke-linecap:round;stroke-linejoin:round;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- Fermion line 1 outgoing -->
+<path d="M 260 180 C 330 165, 440 128, 578 100" fill="none" stroke="#222" stroke-width="3.5" stroke-linecap="round" style="fill:none;stroke:rgb(34, 34, 34);color:rgb(255, 255, 255);stroke-width:3.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<!-- arrow on outgoing 1 -->
+<path d="M 540 108 L 578 100 L 548 114" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="fill:none;stroke:rgb(34, 34, 34);color:rgb(255, 255, 255);stroke-width:3px;stroke-linecap:round;stroke-linejoin:round;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- Fermion line 2 incoming — black -->
+<path d="M 82 378 C 150 380, 220 368, 418 300" fill="none" stroke="#222" stroke-width="3.5" stroke-linecap="round" style="fill:none;stroke:rgb(34, 34, 34);color:rgb(255, 255, 255);stroke-width:3.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<!-- arrow on incoming 2 -->
+<path d="M 388 310 L 418 300 L 396 314" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="fill:none;stroke:rgb(34, 34, 34);color:rgb(255, 255, 255);stroke-width:3px;stroke-linecap:round;stroke-linejoin:round;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- Fermion line 2 outgoing -->
+<path d="M 420 300 C 470 316, 525 348, 578 378" fill="none" stroke="#222" stroke-width="3.5" stroke-linecap="round" style="fill:none;stroke:rgb(34, 34, 34);color:rgb(255, 255, 255);stroke-width:3.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<!-- arrow on outgoing 2 -->
+<path d="M 548 362 L 578 378 L 550 374" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="fill:none;stroke:rgb(34, 34, 34);color:rgb(255, 255, 255);stroke-width:3px;stroke-linecap:round;stroke-linejoin:round;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- Virtual photon — wavy line V1→V2, drawn as a sinuous path, blue -->
+<path d="M 260 180 C 268 192, 276 210, 270 224 C 264 238, 256 248, 266 260 C 276 272, 290 276, 288 290 C 286 304, 274 312, 278 326 C 282 340, 298 348, 300 358 C 302 368, 296 374, 304 382 C 312 390, 328 392, 340 398 C 352 404, 364 406, 378 408 C 392 410, 404 406, 416 300" fill="none" stroke="#1a6bbf" stroke-width="3.2" stroke-linecap="round" style="fill:none;stroke:rgb(26, 107, 191);color:rgb(255, 255, 255);stroke-width:3.2px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- Simpler photon wavy line replacing above — cleaner zigzag wave -->
+<!-- V1=(260,180) V2=(420,300), midpoints for wave -->
+<path d="M 260 180&#10;  C 255 193, 265 207, 268 218&#10;  C 271 229, 261 241, 265 252&#10;  C 269 263, 282 268, 284 279&#10;  C 286 290, 275 302, 279 313&#10;  C 283 324, 296 328, 298 339&#10;  C 300 350, 290 360, 298 370&#10;  C 306 380, 322 382, 336 388&#10;  C 350 394, 408 308, 420 300" fill="none" stroke="#1a6bbf" stroke-width="3.2" stroke-linecap="round" style="fill:none;stroke:rgb(26, 107, 191);color:rgb(255, 255, 255);stroke-width:3.2px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- Vertex dots -->
+<circle cx="260" cy="180" r="7" fill="#222" style="fill:rgb(34, 34, 34);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<circle cx="420" cy="300" r="7" fill="#222" style="fill:rgb(34, 34, 34);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- Particle labels -->
+<text x="60" y="96" font-size="28" fill="#222" style="fill:rgb(34, 34, 34);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Caveat, cursive;font-size:28px;font-weight:400;text-anchor:start;dominant-baseline:auto">e⁻</text>
+<text x="585" y="96" font-size="28" fill="#222" style="fill:rgb(34, 34, 34);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Caveat, cursive;font-size:28px;font-weight:400;text-anchor:start;dominant-baseline:auto">e⁻</text>
+<text x="60" y="400" font-size="28" fill="#222" style="fill:rgb(34, 34, 34);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Caveat, cursive;font-size:28px;font-weight:400;text-anchor:start;dominant-baseline:auto">e⁻</text>
+<text x="585" y="400" font-size="28" fill="#222" style="fill:rgb(34, 34, 34);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Caveat, cursive;font-size:28px;font-weight:400;text-anchor:start;dominant-baseline:auto">e⁻</text>
+
+<!-- Photon label γ -->
+<text x="308" y="268" font-size="30" fill="#1a6bbf" style="fill:rgb(26, 107, 191);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Caveat, cursive;font-size:30px;font-weight:400;text-anchor:start;dominant-baseline:auto">γ</text>
+
+<!-- Title -->
+<text x="340" y="462" font-size="24" fill="#555" text-anchor="middle" style="fill:rgb(85, 85, 85);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Caveat, cursive;font-size:24px;font-weight:400;text-anchor:middle;dominant-baseline:auto">3rd Year</text>
+</svg>
