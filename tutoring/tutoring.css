@@ -1,0 +1,350 @@
+/* ─────────────────────────────────────────
+   tutoring.css  –  drop in tutoring/
+   Requires style.css to already be loaded.
+───────────────────────────────────────── */
+
+/* ── Page header block ── */
+.tut-header {
+  margin-bottom: 3rem;
+}
+
+.tut-eyebrow {
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 0.4rem;
+}
+
+.tut-title {
+  font-family: 'Poppins', serif;
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.75rem;
+  color: #111;
+}
+
+.tut-description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+  max-width: 880px;
+}
+
+.tut-image-wrap {
+  flex: 0 0 45%;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.tut-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.tut-image-wrap:hover .tut-img {
+  transform: scale(1.05);
+}
+
+/* ── Tab bar ── */
+.tut-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 3rem;
+}
+
+.tut-tab {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #999;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 0.6rem 1.4rem 0.7rem;
+  margin-bottom: -1px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.tut-tab:hover { color: #333; }
+
+.tut-tab.active {
+  color: #111;
+  border-bottom-color: #111;
+}
+
+/* ── Panel ── */
+.tut-panel { display: none; }
+.tut-panel.active { display: block; }
+
+#panel-revision .picture {
+    width: 500px;
+    margin-top: -5px; /* or a positive value, e.g. 20px, to push it further down */
+}
+
+#panel-tutoring .picture {
+    width: 700px;
+    margin-top: -5px; /* or a positive value, e.g. 20px, to push it further down */
+}
+
+#panel-tutoring .about-layout a:has(.picture) {
+  display: inline-block;
+  transition: opacity 0.2s ease;
+}
+
+#panel-tutoring .about-layout a:has(.picture):hover {
+  opacity: 0.65;
+}
+
+/* ── Sub-tab bar (within Worksheets) ── */
+.tut-subtabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 2.5rem;
+}
+
+.tut-subtab {
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #aaa;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 0.5rem 1.1rem 0.6rem;
+  margin-bottom: -1px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.tut-subtab:hover { color: #555; }
+
+.tut-subtab.active {
+  color: #111;
+  border-bottom-color: #111;
+}
+
+/* ── Sub-panel ── */
+.tut-subpanel { display: none; }
+.tut-subpanel.active { display: block; }
+
+/* ── Year/topic row ── */
+.tut-year {
+  margin-bottom: 3.5rem;
+}
+
+.tut-year-header {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.tut-year-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #999;
+  white-space: nowrap;
+}
+
+.tut-year-rule {
+  flex: 1;
+  height: 1px;
+  background: #e8e8e8;
+}
+
+/* ── Revision resources: bullet list ── */
+.tut-resource-list {
+  margin-top: 3rem;
+  max-width: 650px;
+}
+
+.tut-subheading {
+  font-family: 'Poppins', serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.tut-bullets {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+  color: #333;
+  list-style: disc;
+  padding-left: 1.4rem;
+}
+
+.tut-bullets li {
+  margin-bottom: 0.6rem;
+}
+
+/* ── Grid: 8 per line ── */
+.tut-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 20px;
+}
+
+/* ── Card ── */
+.tut-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  cursor: pointer;
+}
+
+.tut-card.unavailable {
+  cursor: default;
+  pointer-events: none;
+}
+
+/* ── Cover wrapper: 3/4 aspect, perspective for 3D tilt ── */
+.tut-cover-wrap {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #f0ede8;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  transform-style: preserve-3d;
+  transition: transform 0.25s cubic-bezier(0.34, 1.4, 0.64, 1),
+              box-shadow 0.25s ease;
+}
+
+.tut-card:not(.unavailable):hover .tut-cover-wrap {
+  box-shadow: 0 14px 36px rgba(0,0,0,0.15), 0 4px 10px rgba(0,0,0,0.07);
+}
+
+.tut-cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Hover overlay */
+.tut-cover-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(14, 12, 28, 0.78);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  border-radius: 6px;
+}
+
+.tut-card:not(.unavailable):hover .tut-cover-overlay {
+  opacity: 1;
+}
+
+.tut-ov-icon {
+  width: 22px;
+  height: 22px;
+  color: rgba(255,255,255,0.9);
+  stroke: rgba(255,255,255,0.9);
+}
+
+.tut-ov-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.75);
+  text-align: center;
+}
+
+/* Unavailable cards: dim + faded overlay always visible */
+.tut-card.unavailable .tut-cover-wrap {
+  opacity: 0.5;
+}
+
+.tut-card.unavailable .tut-cover-overlay {
+  background: rgba(0,0,0,0.3);
+  opacity: 1;
+}
+
+/* ── Card labels ── */
+.tut-card-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #111;
+  margin-top: 8px;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  transition: color 0.15s;
+}
+
+.tut-card:not(.unavailable):hover .tut-card-title {
+  color: #1449aa;
+}
+
+.tut-card-sub {
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  color: #888;
+  margin-top: 2px;
+  line-height: 1.4;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1100px) {
+  .tut-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+  }
+}
+
+@media (max-width: 700px) {
+  .tut-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-content {
+    padding: 8rem 1.5rem 3rem;
+  }
+
+  .tut-title {
+    font-size: 30px;
+  }
+
+  .about-layout {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .picture {
+    width: 220px;
+  }
+}
