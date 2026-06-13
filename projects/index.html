@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Projects - David Puerta</title>
+<title>David Puerta</title>
 
 <link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="projects.css" />
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
@@ -13,53 +14,64 @@
 </head>
 <body>
 
-<header>
-    <nav class="nav-left">
-        <a href="../tutoring/index.html">Tutoring</a>
-        <a href="../resources/index.html">Resources</a>
-    </nav>
-    <a href="../index.html">
-    <img src="../assets/logo.png" alt="David Puerta logo" class="logo">
-    </a>
-    <nav class="nav-right">
-        <a href="/projects/index.html" class="active">Projects</a>
-        <a href="../index.html">About</a>
-    </nav>
+<header id="site-header">
+  <nav class="nav-left">
+    <a href="../tutoring/index.html">Tutoring</a>
+    <a href="../resources/index.html">Resources</a>
+    <a href="../index.html">About</a>
+    <a href="../projects/index.html" class="active">Projects</a>
+    <a href="../outreach/index.html">Outreach</a>
+  </nav>
 </header>
 
-
-
 <main class="main-content">
-    <section class="content fade" style="margin-bottom: 350px; margin-top: 165px;">
-    <div class="text">
-        <h5>PROJECTS</h5>
-        <p>
-            Here are a collection of the projects I have worked on.
-        </p>
-    </div>
-    </section>
-    <section class="content" style="margin-bottom: 165px;">
-    <img src="../assets/STEP.png" alt="Figure 1" class="picture">
-    <div class="text">
-        <h1>STEP Solution Database</h1>
-            <h2>July 2025 - Present</h2>
-            <p>
-          The STEP is the mathematics entrance exam used by the University of Cambridge et al as a part of their mathematics or maths-related courses' entry requirements. I have produced written solutions and discussions to various questions displayed on a <a href="https://ecspit.github.io/STEPSolutionDatabase.github.io/" style="color: hsl(0, 0%, 40%);">website</a>. Each document includes hints, a complete written solution and a discussion about the question.
-        </p>
-    </div>
-    </section>
-    <section class="content" style="margin-bottom: 165px;">
-    <img src="../assets/VC3.png" alt="Figure 1" class="picture">
-    <div class="text">
-        <h1>Vector Calculus</h1>
-            <h2>August 2025 - September 2025</h2>
-            <p>
-          Following David Tong's amazing  <a href="https://www.damtp.cam.ac.uk/user/tong/vc/vc.pdf" style="color: hsl(0, 0%, 40%);">notes</a> and supporting with Dexter Chua's <a href="https://dec41.user.srcf.net/notes/IA_L/vector_calculus.pdf" style="color: hsl(0, 0%, 40%);">notes</a> on Vector Calculus, I have complied my own set of notes for Vector Calculus. These notes were made with and supported with resources that are opensource and online, at the time of compling these notes I have not taken a univeristy course on vector calculus. My goal is to show that you do not need to do a univeristy module to learn advanced mathematics.
-            </p>
-    </div>
-    </section>
-</main>
+  <div class="proj-header fade">
+    <p class="proj-eyebrow">David Puerta</p>
+    <h1 class="proj-title">Projects</h1>
+    <p class="proj-description">
+      Here are a collection of personal and professional projects I have worked on.
+    </p>
+  </div>
 
+  <!-- ════════════════════════════════════
+       PROJECT 2 - copy this and the left/right is auto 
+  ════════════════════════════════════ -->
+  <section class="proj-row reverse fade">
+    <div class="proj-image-wrap">
+        <a href="https://ecspit.github.io/STEPSolutionDatabase.github.io/" target="_blank">
+        <img src="../assets/STEP.png" alt="Project 2" class="proj-img">
+        </a>
+    </div>
+    <div class="proj-text">
+      <p class="proj-tag">Resource</p>
+      <h2 class="proj-name">STEP Solution Database</h2>
+      <p class="proj-desc">
+        The STEP is the mathematics entrance exam used by the University of Cambridge et al as a part of their mathematics or maths-related courses' entry requirements. I have produced written solutions and discussions to various questions displayed on a website. Each document includes hints, a complete written solution and a discussion about the question.
+      </p>
+      <a href="https://ecspit.github.io/STEPSolutionDatabase.github.io/" class="proj-link">View project →</a>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       PROJECT 3 — image right
+  ════════════════════════════════════ -->
+  <section class="proj-row fade">
+    <div class="proj-image-wrap">
+        <a href="#" target="_blank">
+        <img src="../assets/VCVC.png" alt="Project 3" class="proj-img">
+        </a>
+    </div>
+    <div class="proj-text">
+      <p class="proj-tag">Self Study</p>
+      <h2 class="proj-name">Vector Calculus</h2>
+      <p class="proj-desc">
+        Following <a href="https://www.damtp.cam.ac.uk/user/tong/vc/vc.pdf" style="color: hsl(0, 0%, 40%);">David Tong's</a> and <a href="https://dec41.user.srcf.net/notes/IA_L/vector_calculus.pdf" style="color: hsl(0, 0%, 40%);">Dexter Chua's</a> notes, I created a condensed set of refrence notes with solutions to the problems provided by Tong. At the time of compling these notes I had not taken a univeristy course on vector calculus.
+      </p>
+      <a href="#" class="proj-link">View project →</a>
+    </div>
+  </section>
+
+</main>
 
 <script src="../script.js"></script>
 
