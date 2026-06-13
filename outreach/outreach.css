@@ -1,0 +1,147 @@
+/* ─────────────────────────────────────────
+   projects.css  –  drop in projects/
+   Requires style.css to already be loaded.
+───────────────────────────────────────── */
+
+/* ── Page header ── */
+.proj-header {
+  margin-bottom: 4rem;
+}
+
+.proj-eyebrow {
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 0.4rem;
+}
+
+.proj-title {
+  font-family: 'Poppins', serif;
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #111;
+}
+
+.proj-description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+  max-width: 880px;
+}
+
+/* ── Project row ── */
+.proj-row {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  margin-bottom: 8rem;
+}
+
+.proj-row.reverse {
+  flex-direction: row-reverse;
+}
+
+/* ── Image ── */
+.proj-image-wrap {
+  flex: 0 0 45%;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.proj-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.proj-image-wrap:hover .proj-img {
+  transform: scale(1.05);
+}
+
+/* ── Text ── */
+.proj-text {
+  flex: 1;
+  font-family: "Poppins", sans-serif;
+}
+
+.proj-tag {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 0.8rem;
+}
+
+.proj-name {
+  font-family: 'Poppins', serif;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+.proj-desc {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+  color: #444;
+  margin-bottom: 1.5rem;
+  max-width: 480px;
+}
+
+.proj-link {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: #1449aa;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.proj-link:hover {
+  opacity: 0.6;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .proj-row,
+  .proj-row.reverse {
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 5rem;
+  }
+
+  .proj-image-wrap {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+
+  .proj-desc {
+    max-width: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-content {
+    padding: 8rem 1.5rem 3rem;
+  }
+
+  .proj-title {
+    font-size: 30px;
+  }
+
+  .proj-name {
+    font-size: 24px;
+  }
+}
