@@ -17,53 +17,56 @@ body {
 header {
     position: fixed;
     width: 100%;
-    padding: 50px 50px;
+    padding: 50px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
     z-index: 1000;
 
-    background: rgba(255, 255, 255, 1); /* solid initially */
+    background: rgba(255,255,255,1);
     transition: background 0.4s ease, backdrop-filter 0.4s ease;
 }
 
-.logo {
-  height: 55px; /* THIS is the key part */
-  width: auto;
-}
-
-/* Left + Right nav containers */
-.nav-left,
-.nav-right {
+.nav-left {
+    font-family: 'Poppins', sans-serif;
     display: flex;
-    gap: 25px;
+    gap: 35px;
 }
 
-.logo {
-  height: 55px;
-  width: auto;
-}
-
-/* NEW: center the anchor instead */
-header a:has(.logo) {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-/* Links */
 nav a {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
     text-decoration: none;
     color: #111;
-    font-size: 13px;
-    opacity: 0.7;
-    transition: 0.3s;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    opacity: 0.5;
+    transition: opacity 0.25s ease, font-size 0.25s ease;
+    display: inline-block;
 }
 
 nav a:hover {
     opacity: 1;
+}
+
+nav a.active {
+    opacity: 1;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+header.transparent {
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(5px);
+}
+
+header.transparent nav a {
+    opacity: 0.35;
+}
+
+header.transparent nav a:hover,
+header.transparent nav a.active {
+    opacity: 0.85;
 }
 
 /* HERO */
@@ -190,13 +193,34 @@ footer {
   margin: 1rem 0;
 }
 
-.picture {
-  max-width: 600px;
-  height: auto;
+.about-layout {
+    display: flex;
+    align-items: flex-start; /* aligns image with top of About heading area */
+    justify-content: space-between;
+    gap: 60px;
+    margin-top: 1rem;
+
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: .01em;
+    font-family: "Poppins", sans-serif;
 }
 
 .text {
-  max-width: 600px;
+    flex: 1;
+    max-width: 600px;
+}
+
+.text p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.picture {
+    width: 400px;
+    height: auto;
+    flex-shrink: 0;
+    margin-top: -80px; /* adjust as needed */
 }
 
 .module{
@@ -249,17 +273,36 @@ a:visited {
   color: inherit;
 }
 
+.about-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
 
+.text {
+    max-width: 650px;
 
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: .01em;
+    line-height: 1.7;
+
+    margin-top: 1.5rem;
+}
 
 @media (max-width: 768px) {
-    .about-container {
-        flex-direction: column;
-        text-align: center;
+    .about-layout {
+        flex-direction: column-reverse;
         align-items: center;
     }
 
     .picture {
-        width: 180px;
+        width: 220px;
+    }
+
+    .text {
+        text-align: left;
     }
 }
