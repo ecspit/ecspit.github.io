@@ -145,3 +145,22 @@
     font-size: 24px;
   }
 }
+
+@media (max-width: 768px) {
+    .proj-title { font-size: 28px; }
+    .proj-name  { font-size: 22px; }
+
+    .proj-row,
+    .proj-row.reverse {
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 3.5rem;
+    }
+
+    .proj-image-wrap {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+
+    .proj-desc { max-width: none; }
+}
