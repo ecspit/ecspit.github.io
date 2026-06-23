@@ -15,14 +15,20 @@
 <body>
 
 <header id="site-header">
-  <nav class="nav-left">
-    <a href="../tutoring/index.html">Tutoring</a>
-    <a href="../resources/index.html">Resources</a>
-    <a href="../index.html">About</a>
-    <a href="../projects/index.html">Projects</a>
-    <a href="../outreach/index.html" class="active">Outreach</a>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+  <nav>
+    <div class="nav-left" id="navLeft">
+      <a href="../tutoring/index.html">Tutoring</a>
+      <a href="../resources/index.html">Resources</a>
+      <a href="../index.html">About</a>
+      <a href="../projects/index.html">Projects</a>
+      <a href="../outreach/index.html" class="active">Outreach</a>
+    </div>
   </nav>
 </header>
+<div class="nav-overlay" id="navOverlay"></div>
 
 <main class="main-content">
   <div class="proj-header fade">
@@ -58,7 +64,7 @@
         </a>
     </div>
     <div class="proj-text">
-      <p class="proj-tag">Course</p>
+      <p class="proj-tag">University Admissions</p>
       <h2 class="proj-name">Problem Solving Matters</h2>
       <p class="proj-desc">
         Problem Solving Matters is a course for Year 12 students interested in applying to study Mathematics, Mathematical Sciences or other highly mathematics-dependent courses at University. In association with Durham Univeristy, we delivered 3 in person day sessions consisting of minature lectures, work room sessions and talks on univeristy admissions, heavily focused on cultivating problem solving skills. You can read more about it <a href="https://mei.org.uk/course/problem-solving-matters/" style="color: hsl(0, 0%, 40%);">here</a>.
