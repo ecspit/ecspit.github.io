@@ -268,3 +268,8 @@
     font-size: 30px;
   }
 }
+
+@media (max-width: 768px) {
+    .abt-title { font-size: 28px; }
+    .abt-grid  { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+}
