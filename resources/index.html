@@ -19,14 +19,20 @@
 <body>
 
 <header id="site-header">
-  <nav class="nav-left">
-    <a href="../tutoring/index.html">Tutoring</a>
-    <a href="../resources/index.html" class="active">Resources</a>
-    <a href="../index.html">About</a>
-    <a href="../projects/index.html">Projects</a>
-    <a href="../outreach/index.html">Outreach</a>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+  <nav>
+    <div class="nav-left" id="navLeft">
+      <a href="../tutoring/index.html">Tutoring</a>
+      <a href="../resources/index.html" class="active">Resources</a>
+      <a href="../index.html">About</a>
+      <a href="../projects/index.html">Projects</a>
+      <a href="../outreach/index.html">Outreach</a>
+    </div>
   </nav>
 </header>
+<div class="nav-overlay" id="navOverlay"></div>
 
   <!-- ── MAIN ── -->
   <main class="main-content">
@@ -352,6 +358,18 @@
       });
       card.addEventListener('mouseleave', () => { wrap.style.transform = ''; });
     });
+
+        // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const navLeft   = document.getElementById('navLeft');
+    const overlay   = document.getElementById('navOverlay');
+
+    function openMenu()  { hamburger.classList.add('open');    navLeft.classList.add('open');    overlay.classList.add('open'); }
+    function closeMenu() { hamburger.classList.remove('open'); navLeft.classList.remove('open'); overlay.classList.remove('open'); }
+
+    hamburger.addEventListener('click', () => hamburger.classList.contains('open') ? closeMenu() : openMenu());
+    overlay.addEventListener('click', closeMenu);
+    navLeft.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
   </script>
 </body>
 </html>
