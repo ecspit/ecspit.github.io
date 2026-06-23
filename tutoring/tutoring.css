@@ -348,3 +348,29 @@
     width: 220px;
   }
 }
+
+@media (max-width: 768px) {
+    .tut-title { font-size: 28px; }
+
+    .tut-tabs, .tut-subtabs {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+    }
+
+    .tut-tab  { padding: 0.6rem 1rem 0.7rem; font-size: 11px; }
+    .tut-subtab { padding: 0.5rem 0.9rem 0.6rem; font-size: 10px; }
+
+    .tut-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+
+    .tut-resource-list { max-width: 100%; }
+
+    #panel-revision .picture,
+    #panel-tutoring .picture {
+        width: 100%;
+        max-width: 260px;
+        margin-top: 0;
+    }
+
+    .tut-image-wrap { flex: 1 1 auto; width: 100%; }
+}
