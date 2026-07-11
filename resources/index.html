@@ -1,7 +1,3 @@
-<!-- TO ADD-->
-<!--  Add the Year 2 Cards
- Add the Lecture notes when done -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,283 +41,114 @@
       </p>
     </div>
 
-    <!-- ── TAB NAV ── -->
-    <div class="res-tabs fade">
-      <button class="res-tab active" onclick="switchTab('notes')">Lecture Notes</button>
-      <button class="res-tab" onclick="switchTab('anki')">Anki Flashcards</button>
+    <!-- ── LECTURE NOTES ── -->
+    <div class="res-year fade">
+      <div class="res-year-header">
+        <span class="res-year-label">Lecture Notes</span>
+        <span class="res-year-rule"></span>
+      </div>
+      <div class="res-grid">
+
+        <a href="lecturenotes/ProbabilityNotes.pdf" class="res-card" title="Probability I">
+          <div class="res-cover-wrap">
+            <img src="../resources/assets/Prob1.png" alt="Probability I Notes cover" class="res-cover-img" />
+            <div class="res-cover-overlay">
+              <svg class="res-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              <span class="res-ov-text">Open PDF</span>
+            </div>
+          </div>
+          <p class="res-card-title">Probability I</p>
+          <p class="res-card-sub">Debleena Thacker · 2024</p>
+        </a>
+
+        <a href="lecturenotes/AlgebraRevisionNotes.pdf" class="res-card" title="Algebra II">
+          <div class="res-cover-wrap">
+            <img src="../resources/assets/Algebra.png" alt="Algebra II Notes cover" class="res-cover-img" />
+            <div class="res-cover-overlay">
+              <svg class="res-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              <span class="res-ov-text">Open PDF</span>
+            </div>
+          </div>
+          <p class="res-card-title">Algebra II</p>
+          <p class="res-card-sub">Alexander Stasinski & Pavel Tumarkin · 2025</p>
+        </a>
+
+        <a href="lecturenotes/MethodsRevisionNotes.pdf" class="res-card" title="Mathematical II">
+          <div class="res-cover-wrap">
+            <img src="../resources/assets/Methods.png" alt="Mathematical Methods II Notes cover" class="res-cover-img" />
+            <div class="res-cover-overlay">
+              <svg class="res-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              <span class="res-ov-text">Open PDF</span>
+            </div>
+          </div>
+          <p class="res-card-title">Mathematical Methods II</p>
+          <p class="res-card-sub">Anthony Yeates & Christopher Prior · 2025</p>
+        </a>
+
+      </div>
     </div>
 
-    <!-- ════════════════════════════════════
-         NOTES PANEL
-    ════════════════════════════════════ -->
-    <div id="panel-notes" class="res-panel active">
-
-      <!-- Year 1 -->
-      <div class="res-year fade">
-        <div class="res-year-header">
-          <span class="res-year-label">1st Year</span>
-          <span class="res-year-rule"></span>
-        </div>
-        <div class="res-grid">
-
-          <!-- <a href="#" class="res-card" title="Dynamics I">
-            <div class="res-cover-wrap">
-              <img src="../resources/assets/Dym1.png" alt="Dynamics I Notes cover" class="res-cover-img" />
-              <div class="res-cover-overlay">
-                <svg class="res-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                <span class="res-ov-text">Open PDF</span>
-              </div>
-            </div>
-            <p class="res-card-title">Dynamics I</p>
-            <p class="res-card-sub">Richard Ward · 2025</p>
-          </a> -->
-
-          <!-- a href="#" class="res-card" title="Calculus I">
-            <div class="res-cover-wrap">
-              <img src="../resources/assets/Calc1.png" alt="Calculus I Notes cover" class="res-cover-img" />
-              <div class="res-cover-overlay">
-                <svg class="res-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                <span class="res-ov-text">Open PDF</span>
-              </div>
-            </div>
-            <p class="res-card-title">Calculus I</p>
-            <p class="res-card-sub">Sam Fearn & Peter Bowcock · 2024/25</p>
-          </a> -->
-
-          <!-- <a href="#" class="res-card" title="Linear Algebra I">
-            <div class="res-cover-wrap">
-              <img src="../resources/assets/LA.png" alt="Linear Algebra I Notes cover" class="res-cover-img" />
-              <div class="res-cover-overlay">
-                <svg class="res-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                <span class="res-ov-text">Open PDF</span>
-              </div>
-            </div>
-            <p class="res-card-title">Linear Algebra I</p>
-            <p class="res-card-sub">Andrew Lobb & Patrick Dorey · 2024/25</p>
-          </a> -->
-
-          <a href="lecturenotes/ProbabilityNotes.pdf" class="res-card" title="Probability I">
-            <div class="res-cover-wrap">
-              <img src="../resources/assets/Prob1.png" alt="Probability I Notes cover" class="res-cover-img" />
-              <div class="res-cover-overlay">
-                <svg class="res-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                <span class="res-ov-text">Open PDF</span>
-              </div>
-            </div>
-            <p class="res-card-title">Probability I</p>
-            <p class="res-card-sub">Debleena Thacker · 2024</p>
-          </a>
-
-        </div>
+    <!-- ── ANKI FLASHCARDS ── -->
+    <div class="res-year fade">
+      <div class="res-year-header">
+        <span class="res-year-label">Anki Flashcards</span>
+        <span class="res-year-rule"></span>
       </div>
+      <div class="res-grid">
 
-      <!-- Year 2 -->
-      <div class="res-year fade">
-        <div class="res-year-header">
-          <span class="res-year-label">2nd Year</span>
-          <span class="res-year-rule"></span>
-        </div>
-        <div class="res-grid">
-
-          <a href="lecturenotes/AlgebraRevisionNotes.pdf" class="res-card" title="Algebra II">
-            <div class="res-cover-wrap">
-              <img src="../resources/assets/Algebra.png" alt="Algebra II Notes cover" class="res-cover-img" />
-              <div class="res-cover-overlay">
-                <svg class="res-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                <span class="res-ov-text">Open PDF</span>
-              </div>
+        <!-- A-Level -->
+        <a href="../flashcards/ALevel.zip" class="res-card" title="A-Level Flashcards">
+          <div class="res-cover-wrap">
+            <img src="../resources/assets/NEB.jpg" alt="A-Level Flashcards" class="res-cover-img" />
+            <div class="res-cover-overlay">
+              <svg class="res-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              <span class="res-ph-name">A-Level</span>
             </div>
-            <p class="res-card-title">Algebra II</p>
-            <p class="res-card-sub">Alexander Stasinski & Pavel Tumarkin · 2025</p>
-          </a>
-
-          <!-- <a href="#" class="res-card" title="Complex Analysis II">
-            <div class="res-cover-wrap">
-              <img src="../resources/assets/CA.png" alt="Complex Analysis II Notes cover" class="res-cover-img" />
-              <div class="res-cover-overlay">
-                <svg class="res-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                <span class="res-ov-text">Open PDF</span>
-              </div>
+            <div class="res-cover-overlay">
+              <svg class="res-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span class="res-ov-text">Download</span>
             </div>
-            <p class="res-card-title">Complex Analysis II</p>
-            <p class="res-card-sub">Amit Einav & Stephen Harrap · 2026</p>
-          </a> -->
+          </div>
+          <p class="res-card-title">A-Level</p>
+          <p class="res-card-sub">OCR-A Maths · OCR-A Further Maths (Mechanics + Additional Pure)· OCR-A Physics</p>
+        </a>
 
-          <!-- <a href="#" class="res-card" title="Methods of Mathematical Physics II">
-            <div class="res-cover-wrap">
-              <img src="../resources/assets/Physics.png" alt="Methods of Mathematical Physics II Notes cover" class="res-cover-img" />
-              <div class="res-cover-overlay">
-                <svg class="res-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                <span class="res-ov-text">Open PDF</span>
-              </div>
+        <!-- Year 1 -->
+        <a href="../flashcards/UniYear1.zip" class="res-card" title="Year 1 Flashcards">
+          <div class="res-cover-wrap">
+            <img src="../resources/assets/PIA.jpg" alt="Year 1 Flashcards" class="res-cover-img" />
+            <div class="res-cover-overlay">
+              <svg class="res-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              <span class="res-ph-name">Year 1</span>
             </div>
-            <p class="res-card-title">Methods of Mathematical Physics II</p>
-            <p class="res-card-sub">Iñaki García Etxebarria & Aristos Donos · 2026</p>
-          </a> -->
-
-          <a href="lecturenotes/MethodsRevisionNotes.pdf" class="res-card" title="Mathematical II">
-            <div class="res-cover-wrap">
-              <img src="../resources/assets/Methods.png" alt="Mathematical Methods II Notes cover" class="res-cover-img" />
-              <div class="res-cover-overlay">
-                <svg class="res-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                <span class="res-ov-text">Open PDF</span>
-              </div>
+            <div class="res-cover-overlay">
+              <svg class="res-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span class="res-ov-text">Download</span>
             </div>
-            <p class="res-card-title">Mathematical Methods II</p>
-            <p class="res-card-sub">Anthony Yeates & Christopher Prior · 2025</p>
-          </a>
+          </div>
+          <p class="res-card-title">Year 1</p>
+          <p class="res-card-sub">Analysis I · Calculus I · Dynamics I · Linear Algebra I · Probability I · Statistics I </p>
+        </a>
 
-        </div>
+        <!-- Year 2 -->
+        <a href="../flashcards/UniYear2.zip" class="res-card" title="Year 2 Flashcards">
+          <div class="res-cover-wrap">
+            <img src="../resources/assets/CRAB.jpg" alt="Year 2 Flashcards" class="res-cover-img" />
+            <div class="res-cover-overlay">
+              <svg class="res-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              <span class="res-ph-name">Year 2</span>
+            </div>
+            <div class="res-cover-overlay">
+              <svg class="res-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span class="res-ov-text">Download</span>
+            </div>
+          </div>
+          <p class="res-card-title">Year 2</p>
+          <p class="res-card-sub">Algebra II · Complex Analysis II · Mathematical Methods II · Methods of Mathematical Physics II · Probability II · Statistical Inference II </p>
+        </a>
+
       </div>
-
-      <!--  To add 3rd Year -->
-      <!-- <div class="res-year fade">
-        <div class="res-year-header">
-          <span class="res-year-label">2nd Year</span>
-          <span class="res-year-rule"></span>
-        </div>
-        <div class="res-grid">
-
-          <a href="lecturenotes/Probability 1 Notes.pdf" class="res-card" title="Algebra II">
-            <div class="res-cover-wrap">
-              <img src="../resources/assets/Algebra.png" alt="Algebra II Notes cover" class="res-cover-img" />
-              <div class="res-cover-overlay">
-                <svg class="res-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                <span class="res-ov-text">Open PDF</span>
-              </div>
-            </div>
-            <p class="res-card-title">Algebra II</p>
-            <p class="res-card-sub">Alexander Stasinski & Pavel Tumarkin · 2025</p>
-          </a>
-
-          <a href="lecturenotes/Probability 1 Notes.pdf" class="res-card" title="Complex Analysis II">
-            <div class="res-cover-wrap">
-              <img src="../resources/assets/CA.png" alt="Complex Analysis II Notes cover" class="res-cover-img" />
-              <div class="res-cover-overlay">
-                <svg class="res-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                <span class="res-ov-text">Open PDF</span>
-              </div>
-            </div>
-            <p class="res-card-title">Complex Analysis II</p>
-            <p class="res-card-sub">Amit Einav & Stephen Harrap · 2026</p>
-          </a>
-
-          <a href="lecturenotes/Probability 1 Notes.pdf" class="res-card" title="Methods of Mathematical Physics II">
-            <div class="res-cover-wrap">
-              <img src="../resources/assets/Physics.png" alt="Methods of Mathematical Physics II Notes cover" class="res-cover-img" />
-              <div class="res-cover-overlay">
-                <svg class="res-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                <span class="res-ov-text">Open PDF</span>
-              </div>
-            </div>
-            <p class="res-card-title">Methods of Mathematical Physics II</p>
-            <p class="res-card-sub">Iñaki García Etxebarria & Aristos Donos · 2026</p>
-          </a>
-
-          <a href="lecturenotes/MethodsRevisionNotes.pdf" class="res-card" title="Mathematical II">
-            <div class="res-cover-wrap">
-              <img src="../resources/assets/Methods.png" alt="Mathematical Methods II Notes cover" class="res-cover-img" />
-              <div class="res-cover-overlay">
-                <svg class="res-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                <span class="res-ov-text">Open PDF</span>
-              </div>
-            </div>
-            <p class="res-card-title">Mathematical Methods II</p>
-            <p class="res-card-sub">Anthony Yeates & Christopher Prior · 2025</p>
-          </a>
-
-        </div>
-      </div> -->
-
-      
-
-    </div><!-- /panel-notes -->
-
-
-    <!-- ════════════════════════════════════
-         ANKI PANEL
-    ════════════════════════════════════ -->
-    <div id="panel-anki" class="res-panel">
-
-      <div class="res-year fade">
-        <div class="res-year-header">
-          <span class="res-year-label">Anki Flashcards</span>
-          <span class="res-year-rule"></span>
-        </div>
-        <div class="res-grid">
-
-          <!-- A-Level -->
-          <a href="../flashcards/ALevel.zip" class="res-card" title="A-Level Flashcards">
-            <div class="res-cover-wrap">
-              <img src="../resources/assets/NEB.jpg" alt="A-Level Flashcards" class="res-cover-img" />
-              <div class="res-cover-overlay">
-                <svg class="res-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                <span class="res-ph-name">A-Level</span>
-              </div>
-              <div class="res-cover-overlay">
-                <svg class="res-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                <span class="res-ov-text">Download</span>
-              </div>
-            </div>
-            <p class="res-card-title">A-Level</p>
-            <p class="res-card-sub">OCR-A Maths · OCR-A Further Maths (Mechanics + Additional Pure)· OCR-A Physics</p>
-          </a>
-
-          <!-- Year 1 -->
-           <a href="../flashcards/UniYear1.zip" class="res-card" title="Year 1 Flashcards">
-            <div class="res-cover-wrap">
-              <img src="../resources/assets/PIA.jpg" alt="Year 1 Flashcards" class="res-cover-img" />
-              <div class="res-cover-overlay">
-                <svg class="res-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                <span class="res-ph-name">Year 1</span>
-              </div>
-              <div class="res-cover-overlay">
-                <svg class="res-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                <span class="res-ov-text">Download</span>
-              </div>
-            </div>
-            <p class="res-card-title">Year 1</p>
-            <p class="res-card-sub">Analysis I · Calculus I · Dynamics I · Linear Algebra I · Probability I · Programming I · Statistics I </p>
-          </a>
-
-          <!-- Year 2 -->
-          <a href="../flashcards/UniYear2.zip" class="res-card" title="Year 2 Flashcards">
-            <div class="res-cover-wrap">
-              <img src="../resources/assets/CRAB.jpg" alt="Year 2 Flashcards" class="res-cover-img" />
-              <div class="res-cover-overlay">
-                <svg class="res-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                <span class="res-ph-name">Year 2</span>
-              </div>
-              <div class="res-cover-overlay">
-                <svg class="res-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                <span class="res-ov-text">Download</span>
-              </div>
-            </div>
-            <p class="res-card-title">Year 2</p>
-            <p class="res-card-sub">Algebra II · Complex Analysis II · Mathematical Methods II · Methods of Mathematical Physics II · Probability II · Statistical Inference II </p>
-          </a>
-
-          <!-- To add 3rd Year -->
-          <!-- <a href="../flashcards/Uni Year 2.zip" class="res-card" title="Year 3 Flashcards">
-            <div class="res-cover-wrap">
-              <img src="../resources/assets/PIA2.jpg" alt="Year 3 Flashcards" class="res-cover-img" />
-              <div class="res-cover-overlay">
-                <svg class="res-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                <span class="res-ph-name">Year 3</span>
-              </div>
-              <div class="res-cover-overlay">
-                <svg class="res-ov-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                <span class="res-ov-text">Download</span>
-              </div>
-            </div>
-            <p class="res-card-title">Year 3</p>
-            <p class="res-card-sub">Fluid Mechanics III · General Relativity III · Mathematical Biology III · Quantum Mechanics III</p>
-          </a> -->
-
-        </div>
-      </div>
-
-    </div><!-- /panel-anki -->
+    </div>
 
   </main>
 
@@ -341,12 +168,6 @@
     }, { threshold: 0.1 });
     fades.forEach(el => observer.observe(el));
 
-    /* ── Tab switching ── */
-    function switchTab(name) {
-      document.querySelectorAll('.res-tab').forEach(t => t.classList.toggle('active', t.getAttribute('onclick').includes(name)));
-      document.querySelectorAll('.res-panel').forEach(p => p.classList.toggle('active', p.id === 'panel-' + name));
-    }
-
     /* ── 3D tilt on available cards ── */
     document.querySelectorAll('.res-card:not(.unavailable)').forEach(card => {
       const wrap = card.querySelector('.res-cover-wrap');
@@ -359,7 +180,7 @@
       card.addEventListener('mouseleave', () => { wrap.style.transform = ''; });
     });
 
-        // Hamburger menu
+    // Hamburger menu
     const hamburger = document.getElementById('hamburger');
     const navLeft   = document.getElementById('navLeft');
     const overlay   = document.getElementById('navOverlay');
