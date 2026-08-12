@@ -5,7 +5,7 @@
 
 /* ── Page header block ── */
 .abt-header {
-  margin-bottom: 3rem;
+  margin-bottom: 0;
 }
 
 .abt-eyebrow {
@@ -25,6 +25,158 @@
   letter-spacing: -0.01em;
   margin-bottom: 0.75rem;
   color: #111;
+}
+
+:root {
+  --dp-blue: #3b6fe0;
+  --dp-red: #e14f3d;
+  --dp-green: #2fa968;
+  --dp-grey: #8b8b93;
+  --dp-line: #e8e8e8;
+}
+
+/* ── Header: nav to top-right, logo mark top-left ──
+   This override only loads on pages that include
+   about.css, i.e. only this page for now. */
+#site-header {
+  justify-content: space-between;
+}
+
+#site-header::after {
+  content: "";
+  position: absolute;
+  left: 40px;
+  bottom: 0;
+  height: 1.5px;
+  width: 0;
+  background: #111;
+  animation: dp-line-draw 2s ease forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes dp-line-draw {
+  to { width: 90%; }
+}
+
+.about-grid {
+  position: relative;
+}
+
+.about-grid::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  bottom: -60px;
+  height: 1.5px;
+  width: 0;
+  background: #111;
+  animation: dp-bottom-line-draw 2s ease forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes dp-bottom-line-draw {
+  to {
+    width: 100%;
+  }
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #111;
+}
+
+.dp-initials-wrap {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.dp-initials-wrap::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 0;
+  background: #111;
+  animation: dp-mini-line-draw 0.5s ease forwards;
+  animation-delay: 2.1s;
+}
+
+@keyframes dp-mini-line-draw {
+  to { width: 100%; }
+}
+
+.dp-initials {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #site-header::after,
+  .dp-initials-wrap::after {
+    animation: none;
+    width: 100%;
+  }
+}
+
+.about-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 90px;
+  margin-top: 1rem;
+}
+
+.about-text {
+  max-width: 420px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 1.75;
+}
+
+.about-text p {
+  margin-bottom: 1.1rem;
+}
+
+.about-text a {
+  color: var(--dp-grey);
+}
+
+.about-photo {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.about-photo-img {
+  display: block;
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 32px;
+    margin-top: 1rem;
+  }
+
+  .about-text {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .about-photo-img {
+    width: 260px;
+  }
 }
 
 .abt-description {
