@@ -292,13 +292,6 @@ a:visited {
     margin-top: 1.5rem;
 }
 
-@media (min-width: 769px) {
-    .nav-left {
-        transform: translateX(-90px);
-    }
-}
-
-
 @media (max-width: 768px) {
     .about-layout {
         flex-direction: column-reverse;
