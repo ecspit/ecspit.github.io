@@ -3,78 +3,115 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>David Puerta</title>
+<title>Projects — David Puerta</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../style.css">
-<link rel="stylesheet" href="projects.css" />
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="projects.css">
 </head>
 <body>
 
 <header id="site-header">
-  <button class="hamburger" id="hamburger" aria-label="Open menu">
-    <span></span><span></span><span></span>
-  </button>
   <nav>
+    <a href="../index.html" class="brand">
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="currentColor" stroke-width="1" opacity="0.55">
+          <line x1="16" y1="16" x2="4" y2="4"/>
+          <line x1="16" y1="16" x2="16" y2="4"/>
+          <line x1="16" y1="16" x2="28" y2="4"/>
+          <line x1="16" y1="16" x2="4" y2="16"/>
+          <line x1="16" y1="16" x2="28" y2="16"/>
+          <line x1="16" y1="16" x2="4" y2="28"/>
+          <line x1="16" y1="16" x2="16" y2="28"/>
+          <line x1="16" y1="16" x2="28" y2="28"/>
+        </g>
+        <g fill="currentColor">
+          <circle cx="4" cy="4" r="1.8"/>
+          <circle cx="16" cy="4" r="1.8"/>
+          <circle cx="28" cy="4" r="1.8"/>
+          <circle cx="4" cy="16" r="1.8"/>
+          <circle cx="28" cy="16" r="1.8"/>
+          <circle cx="4" cy="28" r="1.8"/>
+          <circle cx="16" cy="28" r="1.8"/>
+          <circle cx="28" cy="28" r="1.8"/>
+          <circle cx="16" cy="16" r="2.4"/>
+        </g>
+      </svg>
+      <span class="brand-name">David Puerta</span>
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
     <div class="nav-left" id="navLeft">
-      <a href="../tutoring/index.html">Tutoring</a>
-      <a href="../resources/index.html">Resources</a>
-      <a href="../index.html">About</a>
-      <a href="../projects/index.html" class="active">Projects</a>
-      <a href="../outreach/index.html">Outreach</a>
+      <a href="../tutoring/index.html" class="navlink">Tutoring</a>
+      <a href="../resources/index.html" class="navlink">Resources</a>
+      <a href="../index.html" class="navlink">About</a>
+      <a href="../projects/index.html" class="navlink active">Projects</a>
+      <a href="../outreach/index.html" class="navlink">Outreach</a>
     </div>
   </nav>
 </header>
-<div class="nav-overlay" id="navOverlay"></div>
 
-<main class="main-content">
+<main>
   <div class="proj-header fade">
-    <p class="proj-eyebrow">David Puerta</p>
-    <h1 class="proj-title">Projects</h1>
+    <p class="eyebrow">David Puerta</p>
+    <h1 class="title">Projects & Research</h1>
     <p class="proj-description">
       Here are a collection of personal and professional projects I have worked on.
     </p>
   </div>
 
   <!-- ════════════════════════════════════
-       PROJECT 2 - copy this and the left/right is auto 
+       PROJECT — image left
+       Copy a whole <section class="proj-row fade"> block to add another.
+       Add class="reverse" to alternate the image to the right.
   ════════════════════════════════════ -->
-  <section class="proj-row reverse fade">
+
+  <section class="proj-row fade">
     <div class="proj-image-wrap">
-        <a href="https://ecspit.github.io/STEPSolutionDatabase.github.io/" target="_blank">
-        <img src="../assets/STEP.png" alt="Project 2" class="proj-img">
-        </a>
+      <a href="/NonNewtonian.html" target="_blank">
+        <img src="../assets/NN6.png" alt="Non-Newtonian Rheology" class="proj-img">
+      </a>
     </div>
     <div class="proj-text">
-      <p class="proj-tag">Resource</p>
+      <p class="proj-tag">July 2026 - August 2026 (2 months)</p>
+      <h2 class="proj-name">Non-Newtonian Rheology in an Elastic Vessel</h2>
+      <p class="proj-desc">
+        Supervised by Dr Marianna Pepona, derived an analytical ∆p-Q relationship for power-law fluids, implemented the model using the Lattice Boltzmann Method in C++, and validated numerical results against
+    analytical predictions. Extended the study to complex regimes without analytical solutions.
+      </p>
+    </div>
+  </section>
+
+  <section class="proj-row reverse fade">
+    <div class="proj-image-wrap">
+      <a href="https://ecspit.github.io/STEPSolutionDatabase.github.io/" target="_blank">
+        <img src="../assets/STEP.png" alt="STEP Solution Database" class="proj-img">
+      </a>
+    </div>
+    <div class="proj-text">
+      <p class="proj-tag">July 2025 - August 2025 (2 months)</p>
       <h2 class="proj-name">STEP Solution Database</h2>
       <p class="proj-desc">
         The STEP is the mathematics entrance exam used by the University of Cambridge et al as a part of their mathematics or maths-related courses' entry requirements. I have produced written solutions and discussions to various questions displayed on a website. Each document includes hints, a complete written solution and a discussion about the question.
       </p>
-      <a href="https://ecspit.github.io/STEPSolutionDatabase.github.io/" class="proj-link">View project →</a>
     </div>
   </section>
 
-  <!-- ════════════════════════════════════
-       PROJECT 3 — image right
-  ════════════════════════════════════ -->
   <section class="proj-row fade">
     <div class="proj-image-wrap">
-        <a href="#" target="_blank">
-        <img src="../assets/VCVC.png" alt="Project 3" class="proj-img">
-        </a>
+      <a href="#" target="_blank">
+        <img src="../assets/VCVC.png" alt="Vector Calculus" class="proj-img">
+      </a>
     </div>
     <div class="proj-text">
-      <p class="proj-tag">Self Study</p>
+      <p class="proj-tag">August 2025 - October 2025 (3 months)</p>
       <h2 class="proj-name">Vector Calculus</h2>
       <p class="proj-desc">
-        Following <a href="https://www.damtp.cam.ac.uk/user/tong/vc/vc.pdf" style="color: hsl(0, 0%, 40%);">David Tong's</a> and <a href="https://dec41.user.srcf.net/notes/IA_L/vector_calculus.pdf" style="color: hsl(0, 0%, 40%);">Dexter Chua's</a> notes, I studied the material and wrote thorough worked solutions to the problems provided by Tong. At the time of compling these notes I had not taken a univeristy course on vector calculus.
+        Following <a href="https://www.damtp.cam.ac.uk/user/tong/vc/vc.pdf" style="color: hsl(0, 0%, 40%);">David Tong's</a> and <a href="https://dec41.user.srcf.net/notes/IA_L/vector_calculus.pdf" style="color: hsl(0, 0%, 40%);">Dexter Chua's</a> notes, I studied the material independently and worked through the example problems provided by Tong. Attached are my typed worked solutions to some of my favourite problems. At the time of compiling these notes I had not taken a university course on vector calculus.
       </p>
-      <a href="#" class="proj-link">View project →</a>
     </div>
   </section>
 
