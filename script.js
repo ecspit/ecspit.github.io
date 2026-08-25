@@ -10,15 +10,17 @@ window.addEventListener('scroll', () => {
 });
 
 const emailEl = document.getElementById('copyEmail');
-emailEl.addEventListener('click', async () => {
-  const original = emailEl.innerText;
-  try {
-    await navigator.clipboard.writeText(original);
-    emailEl.innerText = 'Copied!';
-    emailEl.classList.add('copied');
-    setTimeout(() => { emailEl.innerText = original; emailEl.classList.remove('copied'); }, 1600);
-  } catch (e) { console.error(e); }
-});
+if (emailEl) {
+  emailEl.addEventListener('click', async () => {
+    const original = emailEl.innerText;
+    try {
+      await navigator.clipboard.writeText(original);
+      emailEl.innerText = 'Copied!';
+      emailEl.classList.add('copied');
+      setTimeout(() => { emailEl.innerText = original; emailEl.classList.remove('copied'); }, 1600);
+    } catch (e) { console.error(e); }
+  });
+}
 
 const hamburger = document.getElementById('hamburger');
 const navLeft = document.getElementById('navLeft');
