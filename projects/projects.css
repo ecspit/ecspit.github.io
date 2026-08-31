@@ -132,6 +132,112 @@
   transform:translateY(0);
 }
 
+ .notes-section { margin-top: 6rem; }
+ 
+  .notes-header .eyebrow {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 45%);
+    margin-bottom: 0.5rem;
+  }
+ 
+  .notes-header .section-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: hsl(0, 0%, 15%);
+    max-width: 42rem;
+    margin-bottom: 2.5rem;
+  }
+ 
+  .notes-list {
+    border-top: 1px solid hsl(0, 0%, 88%);
+  }
+ 
+  .note-item {
+    border-bottom: 1px solid hsl(0, 0%, 88%);
+    padding: 1.25rem 0;
+  }
+ 
+  .note-item summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1.5rem;
+    cursor: pointer;
+    list-style: none;
+  }
+ 
+  .note-item summary::-webkit-details-marker { display: none; }
+ 
+  .note-item summary::after {
+    content: "+";
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: hsl(0, 0%, 55%);
+    margin-left: auto;
+    transition: transform 0.2s ease;
+  }
+ 
+  .note-item[open] summary::after {
+    content: "–";
+  }
+ 
+  /* Non-collapsible variant: .note-item as a plain <a> instead of <details> */
+  a.note-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1.5rem;
+    text-decoration: none;
+  }
+ 
+  a.note-item::after {
+    content: "→";
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: hsl(0, 0%, 55%);
+    margin-left: auto;
+  }
+ 
+  a.note-item:hover .note-title {
+    color: hsl(0, 0%, 5%);
+  }
+ 
+  .note-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.05rem;
+    color: hsl(0, 0%, 15%);
+  }
+ 
+  .note-tag {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: hsl(0, 0%, 55%);
+    white-space: nowrap;
+  }
+ 
+  .note-body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: hsl(0, 0%, 30%);
+    max-width: 42rem;
+    margin-top: 1rem;
+  }
+ 
+  .note-body p { margin-bottom: 1rem; }
+  .note-body p:last-child { margin-bottom: 0; }
+
 /* ── Responsive ── */
 @media (max-width:900px){
   .proj-row,
