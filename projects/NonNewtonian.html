@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Non-Newtonian Rheology — David Puerta</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="projects.css">
+</head>
+<body>
+
+<header id="site-header">
+  <nav>
+    <a href="../index.html" class="brand">
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="currentColor" stroke-width="1" opacity="0.55">
+          <line x1="16" y1="16" x2="4" y2="4"/>
+          <line x1="16" y1="16" x2="16" y2="4"/>
+          <line x1="16" y1="16" x2="28" y2="4"/>
+          <line x1="16" y1="16" x2="4" y2="16"/>
+          <line x1="16" y1="16" x2="28" y2="16"/>
+          <line x1="16" y1="16" x2="4" y2="28"/>
+          <line x1="16" y1="16" x2="16" y2="28"/>
+          <line x1="16" y1="16" x2="28" y2="28"/>
+        </g>
+        <g fill="currentColor">
+          <circle cx="4" cy="4" r="1.8"/>
+          <circle cx="16" cy="4" r="1.8"/>
+          <circle cx="28" cy="4" r="1.8"/>
+          <circle cx="4" cy="16" r="1.8"/>
+          <circle cx="28" cy="16" r="1.8"/>
+          <circle cx="4" cy="28" r="1.8"/>
+          <circle cx="16" cy="28" r="1.8"/>
+          <circle cx="28" cy="28" r="1.8"/>
+          <circle cx="16" cy="16" r="2.4"/>
+        </g>
+      </svg>
+      <span class="brand-name">David Puerta</span>
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-left" id="navLeft">
+      <a href="../tutoring/index.html" class="navlink">Tutoring</a>
+      <a href="../resources/index.html" class="navlink">Resources</a>
+      <a href="../index.html" class="navlink">About</a>
+      <a href="../projects/index.html" class="navlink active">Projects</a>
+      <a href="../outreach/index.html" class="navlink">Outreach</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div class="proj-header fade">
+    <p class="eyebrow">6th July 2026 - 30th August 2026</p>
+    <h1 class="title">Non-Newtonian Rheology in an Elastic Vessel</h1>
+  </div>
+
+  <section class="proj-row reverse fade">
+    <div class="proj-image-wrap">
+      <img src="../assets/NN6.png" alt="Velocity profile of a shear-thinning fluid in an elastic vessel" class="proj-img">
+    </div>
+    <div class="proj-text">
+      <p class="proj-desc">
+        <b>What is this page?</b> This is a week-by-week overview of my research project on Non-Newtonian Rheology in an Elastic Vessel, supervised by Dr Marianna Pepona, along with all the materials, notes and details made along the way.
+      </p>
+      <p class="proj-desc">
+        <b>What is this colourful image?</b> What you are seeing is the end result of this project: a velocity profile of a shear-thinning fluid in an elastic vessel, simulated using the Lattice Boltzmann Method (LBM) in C++.
+      </p>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       WEEK ENTRY
+       Copy a whole <section class="proj-row fade"> block to add another.
+       Add class="reverse" to alternate the image to the right.
+  ════════════════════════════════════ -->
+
+  <section class="proj-row fade">
+    <div class="proj-image-wrap">
+      <a href="NonNewtonian/Notes_on_LBM.pdf" target="_blank">
+        <img src="NonNewtonian/Week1.png" alt="Week 1 summary image" class="proj-img">
+      </a>
+    </div>
+    <div class="proj-text">
+      <p class="proj-tag">Week 1 (6th July 2026 - 12th July 2026)</p>
+      <h2 class="proj-name">Reading, reading and more reading</h2>
+      <p class="proj-desc">
+        As advertised I read a lot, specifically the following:
+      </p>
+      <p class="proj-desc">
+        A few chapters from the Advanced Mathematical Biology IV module notes, my notes are <a href="NonNewtonian/Notes_on_AMB.pdf" style="color: hsl(0, 0%, 40%);">here</a>.
+      </p>
+      <p class="proj-desc">
+        §2 of Anand and Christov's article "Revisiting steady viscous flow of a generalized Newtonian fluid through a slender elastic tube using shell theory", my notes are <a href="NonNewtonian/Notes_on_Anand_Christov_Article.pdf" style="color: hsl(0, 0%, 40%);">here</a>.
+      </p>
+      <p class="proj-desc">
+        Parts of §1 and §3 from The Lattice Boltzmann Method: Principles and Practice textbook, my notes are <a href="NonNewtonian/Notes_on_LBM.pdf" style="color: hsl(0, 0%, 40%);">here</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="proj-row reverse fade">
+    <div class="proj-image-wrap">
+      <a href="NonNewtonian/Notes_on_LBM.pdf" target="_blank">
+        <img src="NonNewtonian/Week2.png" alt="Week 2 summary image" class="proj-img">
+      </a>
+    </div>
+    <div class="proj-text">
+      <p class="proj-tag">Week 2 (13th July 2026 - 19th July 2026)</p>
+      <h2 class="proj-name">More LBM and the C++ program</h2>
+      <p class="proj-desc">
+        Worked through §2 of Gabbanelli, Drazer and Koplik's Lattice Boltzmann method for non-Newtonian (power-law) fluids, my notes are <a href="NonNewtonian/Notes_on_LBM_Non_Newtonian.pdf" style="color: hsl(0, 0%, 40%);">here</a>.
+      </p>
+      <p class="proj-desc">
+        Worked through §2.1, §2.4, §3.1-3.1.1 and §3.2-3.2.3 from Dzanic, Huang and Sauret's Lattice Boltzmann methods for simulating non-Newtonian fluids: A comprehensive review, my notes are <a href="NonNewtonian/Notes_on_LBM_Review.pdf" style="color: hsl(0, 0%, 40%);">here</a>.
+      </p>
+      <p class="proj-desc">
+        Worked through understanding the initial program, my notes are <a href="NonNewtonian/Notes_on_LBM_Cpp_Program.pdf" style="color: hsl(0, 0%, 40%);">here</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="proj-row fade">
+    <div class="proj-image-wrap">
+      <a href="NonNewtonian/Implementation_of_the_Power_Law_LBM_cpp.pdf" target="_blank">
+        <img src="NonNewtonian/Week3.png" alt="Week 3 summary image" class="proj-img">
+      </a>
+    </div>
+    <div class="proj-text">
+      <p class="proj-tag">Week 3 (20th July 2026 - 26th July 2026)</p>
+      <h2 class="proj-name">Implementation of the power-law model for a force-driven flow</h2>
+      <p class="proj-desc">
+        Derived the analytical solution for the power-law model in a force-driven flow, derivation is <a href="NonNewtonian/Implementation_of_the_Power_Law_LBM_cpp.pdf" style="color: hsl(0, 0%, 40%);">here</a>, and implemented this in the C++ program.
+      </p>
+    </div>
+  </section>
+
+  <section class="proj-row reverse fade">
+    <div class="proj-image-wrap">
+      <img src="NonNewtonian/Week4.png" alt="Week 4 summary image" class="proj-img">
+    </div>
+    <div class="proj-text">
+      <p class="proj-tag">Week 4 (27th July 2026 - 2nd August 2026)</p>
+      <h2 class="proj-name">Mesh Convergence Study for the power-law model in a force-driven flow</h2>
+      <p class="proj-desc">
+        Conducted a mesh convergence study for the power-law model in a force-driven flow, showing second-order convergence which can be found <a href="NonNewtonian/Convergence_Study.pdf" style="color: hsl(0, 0%, 40%);">here</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="proj-row fade">
+    <div class="proj-image-wrap">
+      <a href="NonNewtonian/Velocity_Driven_Flow_PL-2.pdf" target="_blank">
+        <img src="NonNewtonian/Week5.png" alt="Week 5 summary image" class="proj-img">
+      </a>
+    </div>
+    <div class="proj-text">
+      <p class="proj-tag">Week 5 (3rd August 2026 - 9th August 2026)</p>
+      <h2 class="proj-name">Implementation of the power-law model for a velocity-driven flow</h2>
+      <p class="proj-desc">
+        Very similar to the force-driven flow. Derived the analytical solution for the power-law model in a velocity-driven flow, derivation is <a href="NonNewtonian/Velocity_Driven_Flow_PL-2.pdf" style="color: hsl(0, 0%, 40%);">here</a>, and implemented this in the C++ program.
+      </p>
+    </div>
+  </section>
+
+  <section class="proj-row reverse fade">
+    <div class="proj-image-wrap">
+      <img src="NonNewtonian/Week6.png" alt="Week 6 summary image" class="proj-img">
+    </div>
+    <div class="proj-text">
+      <p class="proj-tag">Week 6 (10th August 2026 - 16th August 2026)</p>
+      <h2 class="proj-name">Mesh Convergence Study for the power-law model in a velocity-driven flow</h2>
+      <p class="proj-desc">
+        Again, very similar to the force-driven flow. Conducted a mesh convergence study for the power-law model in a velocity-driven flow, showing second-order convergence which can be found <a href="NonNewtonian/Mesh_Convergence_Study__Velocity_Driven.pdf" style="color: hsl(0, 0%, 40%);">here</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="proj-row fade">
+    <div class="proj-image-wrap">
+      <img src="NonNewtonian/Week72.png" alt="Week 7 summary image" class="proj-img">
+    </div>
+    <div class="proj-text">
+      <p class="proj-tag">Week 7 (17th August 2026 - 23rd August 2026)</p>
+      <h2 class="proj-name">Extension to a flexible vessel</h2>
+      <p class="proj-desc">
+        After confirming that the power-law model in a velocity driven flow indeed gave the appropriate second order convergence, turned on the flexible vessels and ran simulations testing shear-thinning, Newtonian and shear-thickening fluids. 
+      </p>
+    </div>
+  </section>
+
+  <section class="proj-row reverse fade">
+    <div class="proj-image-wrap">
+      <a href="NonNewtonian/ResearchReport.pdf" target="_blank">
+        <img src="NonNewtonian/Week8.png" alt="Week 8 summary image" class="proj-img">
+      </a>
+    </div>
+    <div class="proj-text">
+      <p class="proj-tag">Week 8 (24th August 2026 - 30th August 2026)</p>
+      <h2 class="proj-name">Final write up and report</h2>
+      <p class="proj-desc">
+        Completed a full write-up outlining the project from a non-technical perspective. You can find the report <a href="NonNewtonian/ResearchReport.pdf" style="color: hsl(0, 0%, 40%);">here</a>.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<script src="../script.js"></script>
+
+</body>
+</html>
